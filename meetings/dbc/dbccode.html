@@ -1,0 +1,364 @@
+<html>
+<!--
+iContract
+pros
+ ideal source-oriented solutions
+ full support of OCL and DBC fundamentals
+cons
+ bug-riden tool
+ hard or impossible ot integrate into IDEs
+ several code workarounds needed
+ very slow compiles
+
+Codes assertions
+cons
+ must hand code contract in subclasses and implementing classes
+ contract implementation is hard-wired into products
+ contract must be duplicated in comment and code
+ contract code must be ripped out to fully remove
+
+use result to reference <font color=Blue>return</font> value
+a single <font color=Blue>return</font> statement at the end of a routine
+these examples are simple and contrived and contain a large proportion of contract code to real code
+
+
+this code:
+  largely similar to our
+  contains some newer ideas that i've had
+  excludes some supporting routines that we've developed
+
+
+code cannot produce side effects
+-->
+<font size=+2><b>
+<PRE>
+<font color=Green>/**
+  Design by contract
+  
+  @see <a href="dbc.html">Software links</a>
+  @see <a href="Test.java">Download these examples</a>
+**/</font>
+
+<font color=Blue>import</font> java.util.*; 
+
+<font color=Green>/**
+ * Design By Contract Exception.
+ * This exception is thrown only when a contact
+ * is violated.
+ **/</font>
+<font color=Blue>class</font> DBCException <font color=Blue>extends</font> RuntimeException
+{
+  <font color=Green>/**
+   * @param msg Message to display in stack traces
+   **/</font>
+  <font color=Blue>public</font> DBCException(String msg)
+  {
+    <font color=Blue>super</font>(msg);
+  }
+  <font color=Blue>public</font> DBCException()
+  {
+    <font color=Blue>super</font>("Contract violation");
+  }
+}
+
+<font color=Green>/**
+ * This class provides several static methods that help
+ * to directly implement Design by Contract
+ **/</font>
+<font color=Blue>class</font> DBC
+{
+  <font color=Blue>private</font> <font color=Blue>static</font> <font color=Blue>boolean</font> asserting = <font color=Blue>false</font>;
+  <font color=Blue>public</font> <font color=Blue>static</font> <font color=Blue>void</font> setAsserting(<font color=Blue>boolean</font> asserting)
+  {
+    DBC.asserting = asserting;
+  }
+  <font color=Blue>public</font> <font color=Blue>static</font> <font color=Blue>void</font> assert(<font color=Blue>boolean</font> cond, String msg)
+  {
+    if(asserting && !cond)
+    {
+      <font color=Blue>throw</font> <font color=Blue>new</font> DBCException(msg);
+    }
+  }
+  <font color=Blue>public</font> <font color=Blue>static</font> <font color=Blue>void</font> assert(<font color=Blue>boolean</font> cond)
+  {
+    assert(cond, "Assertion failed");
+  }
+  <font color=Blue>public</font> <font color=Blue>static</font> <font color=Blue>void</font> pre(<font color=Blue>boolean</font> cond, String msg)
+  {
+    assert(cond, msg);
+  }
+  <font color=Blue>public</font> <font color=Blue>static</font> <font color=Blue>void</font> pre(<font color=Blue>boolean</font> cond)
+  {
+    assert(cond, "Precondition violated");
+  }
+  <font color=Blue>public</font> <font color=Blue>static</font> <font color=Blue>void</font> post(<font color=Blue>boolean</font> cond, String msg)
+  {
+    assert(cond, msg);
+  }
+  <font color=Blue>public</font> <font color=Blue>static</font> <font color=Blue>void</font> post(<font color=Blue>boolean</font> cond)
+  {
+    assert(cond, "Postcondition violated");
+  }
+  <font color=Blue>public</font> <font color=Blue>static</font> <font color=Blue>void</font> inv(<font color=Blue>boolean</font> cond, Object obj, String msg)
+  {
+    if( asserting && !cond )
+    {
+      System.out.println("state=[" + obj + "]");
+    }
+    assert(cond, msg);
+  }
+  <font color=Blue>public</font> <font color=Blue>static</font> <font color=Blue>void</font> inv(<font color=Blue>boolean</font> cond, Object obj)
+  {
+    inv(cond, obj, "Invariant violated");
+  }
+  <font color=Green>/**
+   * verify that : 'thisImplies' implies 'that'
+   * is a correct statement
+   **/</font>
+  <font color=Blue>public</font> <font color=Blue>static</font> <font color=Blue>boolean</font> implies(<font color=Blue>boolean</font> thisImplies, <font color=Blue>boolean</font> that)
+  {
+    <font color=Blue>return</font> (thisImplies && that) || (!thisImplies);
+  }
+  <font color=Green>/**
+   * Return true if all elements in 'collection' is an instance of 'cls'
+   **/</font>
+  <font color=Blue>public</font> <font color=Blue>static</font> <font color=Blue>boolean</font> eachInstanceOf(Collection collection, Class cls)
+  {
+    if( collection == null )
+      <font color=Blue>return</font> <font color=Blue>false</font>;
+    Itertor iter == collection.iterator();
+    while(iter.hasNext())
+    {
+      if( ! cls.isAssignableFrom(iter.next().getClass()) )
+        <font color=Blue>return</font> <font color=Blue>false</font>;
+    }
+    <font color=Blue>return</font> <font color=Blue>true</font>;
+  }
+}
+
+<font color=Green>/**
+ * This class represents a living person.
+ *
+ * @inv age > 0
+ **/</font>
+<font color=Blue>class</font> Person
+{
+  <font color=Blue>protected</font> <font color=Blue>int</font> age;
+  
+  <font color=Green>/**
+   * @pre age > 0
+   **/</font>
+  <font color=Blue>public</font> Person(int age)
+  {
+    DBC.pre(age > 0);
+    this.age = age;
+    invariant();
+  }
+  
+  <font color=Blue>public</font> <font color=Blue>int</font> getAge()
+  {
+    <font color=Blue>return</font> age;
+  }
+
+  <font color=Blue>protected</font> <font color=Blue>synchronized</font> <font color=Blue>void</font> invariant()
+  {
+    DBC.inv(age > 0, this);
+  }
+  
+  <font color=Blue>public</font> String toString()
+  {
+    <font color=Blue>return</font> "Person(age=" + age + ")";
+  }
+}
+
+<font color=Green>/**
+ * This class represents a currently employed person
+ *
+ * @inv salary > 0
+ **/</font>
+<font color=Blue>class</font> Employee <font color=Blue>extends</font> Person
+{
+  <font color=Blue>double</font> salary;
+  <font color=Blue>public</font> Employee(int age, <font color=Blue>double</font> salary)
+  {
+    <font color=Blue>super</font>(age);
+    this.salary = salary;
+    thisInvariant();
+  }
+  
+  <font color=Blue>protected</font> <font color=Blue>synchronized</font> <font color=Blue>void</font> invariant()
+  {
+    <font color=Blue>super</font>.invariant();
+    thisInvariant();
+  }
+
+  <font color=Blue>private</font> <font color=Blue>void</font> thisInvariant()
+  {
+    DBC.inv(salary > 0, this);
+  }
+  
+  <font color=Green>/**
+   * @pre salary > 0
+   **/</font>
+  <font color=Blue>public</font> <font color=Blue>void</font> setSalary(double salary)
+  {
+    DBC.pre(salary > 0);
+    this.salary = salary;
+    invariant();
+  }
+
+  <font color=Blue>public</font> <font color=Blue>double</font> getSalary()
+  {
+    <font color=Blue>return</font> salary;
+  }
+
+  <font color=Blue>public</font> String toString()
+  {
+    <font color=Blue>return</font> "Employee(age=" + age + ",salary=" + salary + ")";
+  }
+}
+
+<font color=Green>/** 
+ * simple <font color=Blue>interface</font> to a stack implemenation
+ **/</font>
+<font color=Blue>interface</font> Stack 
+{ 
+  <font color=Green>/** 
+   * @pre o != null 
+   * @post !isEmpty() 
+   * @post top() == o 
+   */</font> 
+  <font color=Blue>void</font> push(Object o); 
+ 
+  <font color=Green>/** 
+   * @pre !isEmpty()
+   * @post result != null
+   */</font> 
+  Object pop(); 
+ 
+  <font color=Green>/** 
+   * @pre !isEmpty()
+   * @post result != null
+   */</font> 
+  Object top(); 
+ 
+  <font color=Blue>boolean</font> isEmpty();
+}
+
+<font color=Green>/** 
+ * @inv DBC.implies(isEmpty(), elements.size() == 0)
+ */</font>
+<font color=Blue>class</font> StackImpl <font color=Blue>implements</font> Stack 
+{
+  <font color=Blue>protected</font> Vector elements = <font color=Blue>new</font> Vector();
+  
+  <font color=Blue>public</font> StackImpl()
+  {
+    elements = <font color=Blue>new</font> Vector();
+    
+    invariant();
+  }
+  
+  <font color=Blue>protected</font> <font color=Blue>synchronized</font> <font color=Blue>void</font> invariant()
+  {
+    DBC.inv(DBC.implies(isEmpty(), elements.size()==0), this);
+  }
+  
+  <font color=Blue>public</font> String toString()
+  {
+    <font color=Blue>return</font> "Stack" + elements;
+  }
+ 
+  <font color=Blue>public</font> <font color=Blue>void</font> push(Object o) 
+  {
+    DBC.pre( o != null );
+ 
+    elements.addElement(o);
+ 
+    DBC.post( !isEmpty() );
+    DBC.post( top() == o );
+    invariant();
+  } 
+ 
+  <font color=Blue>public</font> Object pop() 
+  {
+    DBC.pre(!isEmpty());
+ 
+    Object result = top();
+    elements.setSize(elements.size()-1);
+    
+    DBC.post(result != null);
+    invariant();
+
+    <font color=Blue>return</font> result; 
+  } 
+ 
+  <font color=Blue>public</font> Object top() 
+  { 
+    DBC.pre(!isEmpty());
+    
+    Object result = elements.elementAt(elements.size()-1);
+    
+    DBC.post(result != null);
+    invariant();
+    
+    <font color=Blue>return</font> result;
+  } 
+ 
+  <font color=Blue>public</font> <font color=Blue>boolean</font> isEmpty() 
+  { 
+    <font color=Blue>return</font> elements.size() == 0; 
+  } 
+} 
+
+<font color=Blue>public</font> <font color=Blue>class</font> Test
+{
+  <font color=Blue>public</font> <font color=Blue>static</font> <font color=Blue>void</font> main(String[] args) 
+  {
+    DBC.setAsserting(<font color=Blue>false</font>);
+    test();
+    DBC.setAsserting(<font color=Blue>true</font>);
+    test();
+  }
+  <font color=Blue>public</font> <font color=Blue>static</font> <font color=Blue>void</font> test()
+  { 
+    <font color=Blue>try</font>
+    {
+      Stack s = <font color=Blue>new</font> StackImpl(); 
+      s.push("one"); 
+      s.pop(); 
+    
+      s.push("two"); 
+      s.push("three"); 
+    
+      s.pop(); 
+      s.pop(); 
+      s.pop(); // causes an assertion to fail 
+    }
+    <font color=Blue>catch</font>(Exception exc)
+    {
+      exc.printStackTrace();
+    }
+  }
+}
+
+<font color=Green>/***********************************************************
+output:
+
+c:\dbc>java Test
+java.lang.ArrayIndexOutOfBoundsException: -1 < 0
+        at java/util/Vector.elementAt (Vector.java)
+        at StackImpl.top (Test.java:269)
+        at StackImpl.pop (Test.java:256)
+        at Test.test (Test.java:308)
+        at Test.main (Test.java:292)
+DBCException: Precondition violated
+        at DBC.assert (Test.java:67)
+        at DBC.pre (Test.java:81)
+        at StackImpl.pop (Test.java:256)
+        at Test.test (Test.java:308)
+        at Test.main (Test.java:294)
+************************************************************/</font>
+</pre>
+</b></font>
+</html>

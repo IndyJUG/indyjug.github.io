@@ -1,0 +1,14 @@
+<table>
+	<tr>
+		<td><a href="/index.shtml">Home</a></td>
+	</tr>
+	<tr>
+		<td><a href="/forum.shtml">Discussion Forum</a></td>
+	</tr>
+	<tr>
+		<td><a href="/meetings.shtml">Meetings</a></td>
+	</tr>
+	<tr>
+		<td><a href="/sponsors.shtml">Sponsors</a></td>
+	</tr>
+</table>

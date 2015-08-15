@@ -1,0 +1,33 @@
+<!--#include virtual="/itop.shtml" -->
+		
+<table><tr><td>		
+The IndyJUG utilizes <a href="http://groups.yahoo.com/group/indyjug/">yahoo groups</a> as its primary vehicle of communication.<br>
+<br>
+<b>You must be a member of the yahoo group to post messages.</b> In addition, posts are moderated before they are sent out. This is to combat spam and list abuse.<br>
+<br>
+If you have not yet signed up, please consider doing so. It is FREE and it is pretty easy. In fact, this little box on the right will do all the heavy lifting for you.<br>
+<br>
+<div style="text-decoration: underline;">We welcome job postings, technical questions, event announcements, etc.</div><br>
+<br>
+
+
+</td><td width=20></td><td>
+<form method="get"
+      action="http://groups.yahoo.com/subscribe/indyJug"
+      style="background-color: #ffc; width: 254px; padding: 2px 4px">
+  <h6 style="font-weight: bold; margin-bottom: 5px; text-align: center">
+      Subscribe to indyJug</h6>
+  <input style="vertical-align: top"
+      type="text"
+      name="user"
+      value="enter email address"
+      size="20" />
+  <input type="image" alt="Click to join indyJug"
+      name="Click to join indyJug"
+      src="http://us.i1.yimg.com/us.yimg.com/i/yg/img/i/us/ui/join.gif" />
+  <p style="text-align: center;">
+  Powered by <a href="http://us.groups.yahoo.com/">us.groups.yahoo.com</a></p>
+</form>
+</td></tr></table>
+
+<!--#include virtual="/ibottom.shtml" -->

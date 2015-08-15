@@ -1,0 +1,66 @@
+<HTML>
+<LINK rel="STYLESHEET" type="text/css" href="../jug.css">
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<META NAME="Version" CONTENT="8.0.4308">
+<META NAME="Date" CONTENT="7/8/97">
+<META NAME="Template" CONTENT="D:\MSOffice\Office\html.dot">
+</HEAD>
+<BASEFONT FACE="Arial">
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" BGCOLOR="#ffffff">
+
+<P ALIGN="CENTER"><IMG SRC="../images/JUGLogo.gif" WIDTH=342 HEIGHT=93></P>
+<HR>
+<P ALIGN="CENTER"><CENTER><TABLE CELLSPACING=0 BORDER=0 CELLPADDING=3 WIDTH="97%">
+
+<TR>
+<!------ LINKS -------->
+<TD WIDTH="25%" VALIGN="TOP"><!------ LINKS -->
+    <BR><BR>
+    <FONT FACE="Arial" SIZE=2>Links:<BR>
+    &nbsp;&nbsp;<A HREF="../index.html">Home</A><BR>
+    &nbsp;&nbsp;</FONT><A HREF="../survey/survey.html"><FONT FACE="Arial" SIZE=2>Survey</FONT></A><FONT FACE="Arial" SIZE=2><BR>
+    &nbsp;&nbsp;</FONT><A HREF="http://www.indyjug.net:8000/search"><FONT FACE="Arial" SIZE=2>Discussion Forum</FONT></A><FONT FACE="Arial" SIZE=2><BR>
+    &nbsp;&nbsp;</FONT><A HREF="../meetings/next_meeting.html"><FONT FACE="Arial" SIZE=2>Meetings</FONT></A><FONT FACE="Arial" SIZE=2><BR>
+    &nbsp;&nbsp;</FONT><A HREF="../sponsors/companies.html"><FONT FACE="Arial" SIZE=2>Companies using Java</FONT></A><BR>
+    &nbsp;&nbsp;<A HREF="../sponsors/sponsors.html"><FONT FACE="Arial" SIZE="-1">Sponsors</FONT></A><BR>
+    &nbsp;&nbsp;</FONT><A HREF="../feedback/feedback.html"><FONT FACE="Arial"  SIZE="-1">Feedback</FONT></A>
+    </FONT>
+</TD>
+
+<TD VALIGN="TOP">
+
+    <BR>
+    <TABLE BORDER=0>
+        <TR>
+            <TD>
+                <IMG SRC="../sponsors/bea_logo_smtm.gif" WIDTH=172 HEIGHT=108>
+            </TD>
+        </TR>
+        <TR>
+            <TD>
+                <B><FONT SIZE="+1">Thanks to our sponsors!</FONT></B>
+            </TD>
+        </TR>
+        <tr><td>Fusion Alliance</td><td><A HREF="http://www.fusionally.com">www.fusionally.com</a></td></tr>
+        <tr><td>USA Group</td><td><A HREF="http://www.usagroup.com">www.usagroup.com</a></td></tr>
+        <tr><td>Sun Microsystems</td><td><A HREF="http://www.sun.com">www.sun.com</a></td></tr>
+        <tr><td>Addison Wesley  Pearson Tehcnology Group</td><td><a href="http://www.aw.com/cseng">www.aw.com/cseng</a></td></tr>
+        <tr><td>BEA Systems</td><td><a href="http://www.bea.com">www.bea.com</a></td></tr>
+        <TR>
+            <TD>
+                <BR><BR>
+                <FONT SIZE="-1">To learn more about sponsoring IndyJUG,
+                please go <A HREF="become_a_sponsor.html">here</A>.</FONT>
+            </TD>
+        </TR>
+    </TABLE>
+</TD></TR>
+</TABLE>
+</CENTER></P>
+
+<FONT FACE="Arial" SIZE=2><P ALIGN="CENTER">Java and related trademarks are the property of </FONT><A HREF="http://www.sun.com/"><FONT FACE="Arial" SIZE=2>Sun Microsystems</FONT></A><FONT FACE="Arial" SIZE=2><BR>
+Please </FONT><A HREF="mailto:mark@steenbarger.com"><FONT FACE="Arial" SIZE=2>contact us</FONT></A><FONT FACE="Arial" SIZE=2> with any questions or feedback.</P></FONT></BODY>
+</HTML>

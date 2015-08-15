@@ -1,0 +1,24 @@
+<!--#include virtual="/itop.shtml" -->
+
+<h2>A big 'Thank You' to the sponsors of the IndyJUG</h2>
+
+<p>The IndyJUG is a volunteer organization. We thank the following companies who have so generously donated of their time, money, and resources:</p>
+<br>
+
+<table>
+	<tr><td style="padding-bottom:15px; text-align: left;"><a href="http://www.e-gineering.com/"><img width=200 border=0 src="/images/eglogo.gif"></a></td><td>E-gineering provides the hosting for the monthly IndyJUG meetings as well as various door prizes and serves as our 'resource center' for books and materials available to the IndyJUG members. E-gineering, LLC manages projects, architects solutions, and develops solid applications for your enterprise needs.</td></tr>
+	<tr><td style="padding-bottom:15px; text-align: left;"><a href="http://www.moserit.com/"><img width=200 border=0 src="/sponsors/moser.png"></a></td><td>Moser provides pizza and sponsors speakers for the JUG. Moser is a technology solutions company specializing in data management (database administration, database consulting), infrastructure, business intelligence, servers, storage (SAN/NAS) and information security solutions.</td></tr>
+	<tr><td style="padding-bottom:15px; text-align: left;"><a href="https://www.fusionalliance.com/"><img width=200 border=0 src="/sponsors/fusion.jpg"></a></td><td>Fusion Alliance sponsored our very first Robocode challenge, and is the Gold Sponsor for Robocode V. Fusion Alliance was founded with a clear mandate - to offer world-class, big-consulting-firm capabilities while maintaining the ideals, flexibility and value of a smaller, more relational firm.</td></tr>
+	<tr><td style="padding-bottom:15px; text-align: left;"><a href="http://www.partnersinstaffing.com/"><img width=200 border=0 src="/sponsors/pinnacle.png"></a></td><td>Pinnacle Partners has sponsored three consecutive Robocode events: Robocode III, Robocode IV, and Robocode V. Pinnacle Partners provide a broad range of staffing services that include direct hire, professional temporary staffing, high level contracting, contract-to-hire and custom software solutions to over 300 clients in the central Indiana area.</td></tr>
+
+	<tr><td style="padding-bottom:15px; text-align: left;"><a href="http://info.roberthalftechnology.com/indianapolis"><img width=200 border=0 src="/sponsors/roberthalf.jpg"></a></td><td>Robert Half Technology is a Silver sponsor for our Robocode V event. Robert Half Technology is an IT staffing firm in Indianapolis, specializing in the placement of technology professionals.</td></tr>
+	<tr><td style="padding-bottom:15px; text-align: left;"><a href="http://www.anchorpointtr.com/"><img width=200 border=0 src="/sponsors/anchor-point.jpeg"></a></td><td>Anchor Point Technology Resources is a sponsor for our Robocode V event. At Anchor Point we offer top quality IT and Engineering solutions.  Whether you are looking for short or long term answers to your IT and engineering needs we are committed to providing the most qualified resources and services.</td></tr>
+
+	<tr><td style="padding-bottom:15px; text-align: left;"><a href="http://lowdergraphicdesign.com/"><img width=200 border=0 src="/images/LowderGraphicDesign.jpg"></a></td><td>Lowder Graphic Design Inc. created our logo and other graphics used on the site. They design and create beautiful and functional business cards, letterhead, brochures, newsletters, logos and more to promote your company</td></tr>
+	<tr><td style="text-align: center;"><a href="http://www.knowledge-services.com/"><img width=200 border=0 src="/images/ks.jpg"></a></td><td>Knowledge Services was our facility (and beverage) sponsor for many years. They are a professional services organization providing training and education strategies, meeting and training facilities and contract staffing services in order to make people more productive and advance your business.</td></tr>
+</table>
+<br>
+<br>
+<!--#include virtual="/sponsorinfo.html" -->
+
+<!--#include virtual="/ibottom.shtml" -->

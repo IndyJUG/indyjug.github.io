@@ -1,0 +1,632 @@
+
+<html>
+   <!--
+  This file was generated via XSL
+  Author: Michael Slattery, mslattery@searchsoft.net
+  Modified by: Keith Musser, kmusser@idisys.com
+  -->
+   <head>
+        <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script>
+         <!--
+    function statusbar(msg)
+    {
+      window.status = msg;
+    }
+    function msg(amsg)
+    {
+      statusbar(amsg);
+      alert(amsg);
+    }
+    function checkNumber(field)
+    {
+      while( field.value.indexOf('$') > -1 || field.value.indexOf(',') > -1 ||  field.value.indexOf(')') > -1 || field.value.indexOf('(') > -1)
+      {
+        field.value = field.value.replace('$', '');
+        field.value = field.value.replace(',', '');
+        field.value = field.value.replace(')', '');
+        field.value = field.value.replace('(', '');
+      }
+            
+      if(! isValidNumber(field.value) )
+      {
+        msg("An invalid number was entered");
+      }
+      else
+        statusbar("");
+    }
+    function checkDate(field)
+    {
+      var regex = new RegExp("-", "g");
+      field.value = field.value.replace(regex, '/');
+      var li = field.value.lastIndexOf("/");
+      if( field.value.length - li == 3 )
+      {
+        var cent = "20";
+        var yr = field.value.substring(li+1, li+3);
+        if( yr > "30" )
+          cent = "19";
+        field.value = field.value.substring(0,li+1) + cent + yr;
+      }
+      
+      if( ! isValidDate(field.value) )
+        msg("An invalid date was entered.  Use Month Date Year Format MM/DD/YYYY.");
+      else
+        statusbar("");
+    }
+    function isValidNumber(num)
+    {
+      var i, dc, j = 0;
+      
+      num.value = num.replace('$', "");
+      num.value = num.replace(',', "");
+      
+      if( num.value != "" )
+      {
+        i = 0;
+        if( num.charAt(0) == '-' )
+          i = 1;
+        dc = 0;
+        for(; i < num.length; i++)
+        {
+          if( num.charAt(i) == '.')
+          {
+            if( dc > 0 || i == (num.length - 1) || i==0 )
+              return false;
+            dc++;
+          }
+          else if( num.charAt(i) < '0' || num.charAt(i) > '9')
+            return false;
+        }
+      }
+      return true;
+    }
+    function isValidDate(date)
+    {
+      var month, day, year, i;
+  
+      if( date != "" )
+      {
+        i = date.indexOf('/');
+        if( i < 1 )
+          return false;
+        month = date.substring(0,i);
+        if( month.length < 1 || month.length > 2 || month.charAt(0) < '0' || month.charAt(0) > '9')
+          return false;
+        month = parseInt(month);
+  
+        date = date.substring(i+1);
+        i = date.indexOf('/');
+        if( i < 1 )
+          return false;
+        day = date.substring(0,i);
+        if( day.length < 1 || day.length > 2 || day.charAt(0) < '0' || day.charAt(0) > '9')
+          return false;
+        day = parseInt(day);
+  
+        year = date.substring(i+1);
+        if( year.length != 4 || year.charAt(0) < '0' || year.charAt(0) > '9')
+          return false;
+        year = parseInt(year);
+  
+        if( (month < 1 || month> 12 || day < 1 || day > 31 || year < 1900 || year > 2100)
+          || (month == 2 && day > 29)
+          || (month == 2 && day == 29 && (year % 4)!=0 )
+          || (month == 4 && day > 30)
+          || (month == 6 && day > 30)
+          || (month == 9 && day > 30)
+          || (month == 11 && day > 30) )
+          return false;
+      }
+      return true;
+    }
+  
+  //-->
+      </script>
+   </head>
+   <body>
+      <!-- START KLM MODIFICATIONS -->
+      <center><img src="../images/JUGLogo.gif"></center>
+      <h1>Indy JUG Survey</h1>
+      <p>
+         Please fill out out all of the following questions.
+         All information is confidential.  Only statistical information will be made public.
+         We are not asking for your name, so please only submit information once.  We will
+         post results to this website.
+         
+      </p>
+      <form action="../cgi-bin/cgiemail/survey/survey-mail.txt"><INPUT TYPE="hidden" NAME="success" VALUE="http://www.indyjug.net/survey/success.html">
+         <!-- END KLM MODIFICATIONS --><center>
+            <h2>Location</h2>
+            <table border="1">
+               <tr>
+                  <td valign="top" bgcolor="LightYellow">City</td>
+                  <td bgcolor="LightGrey"><input type="text" name="city"></td>
+               </tr>
+               <tr>
+                  <td valign="top" bgcolor="LightYellow">Zip Code</td>
+                  <td bgcolor="LightGrey"><input type="text" name="areacode"></td>
+               </tr>
+            </table>
+         </center>
+         <center>
+            <h2>Presentations</h2>
+            <table border="1">
+               <tr>
+                  <td valign="top" bgcolor="LightYellow">Would you be willing to give a presentation on material in which you are an expert?</td>
+                  <td bgcolor="LightGrey">
+                     Yes <input type="radio" name="present" value="Y">
+                     No <input type="radio" name="present" value="N"></td>
+               </tr>
+               <tr>
+                  <td valign="top" bgcolor="LightYellow">What kinds of speakers would you most like to see give presentations?</td>
+                  <td bgcolor="LightGrey">
+                     <table>
+                        <tr>
+                           <td>Vendors</td>
+                           <td><input type="checkbox" name="speakers" value="Vendors,"></td>
+                        </tr>
+                        <tr>
+                           <td>Professors/Educators</td>
+                           <td><input type="checkbox" name="speakers" value="Professors/Educators,"></td>
+                        </tr>
+                        <tr>
+                           <td>Fellow members</td>
+                           <td><input type="checkbox" name="speakers" value="Fellow members,"></td>
+                        </tr>
+                        <tr>
+                           <td>Industry Experts</td>
+                           <td><input type="checkbox" name="speakers" value="Industry Experts,"></td>
+                        </tr>
+                     </table>
+                     Other: <input type="text" name="speakers"></td>
+               </tr>
+            </table>
+         </center>
+         <center>
+            <h2>Meetings</h2>
+            <table border="1">
+               <tr>
+                  <td valign="top" bgcolor="LightYellow">How many JUG meetings have you attended in the past?</td>
+                  <td bgcolor="LightGrey"><input type="text" name="attendances" onchange="checkNumber(this);"></td>
+               </tr>
+               <tr>
+                  <td valign="top" bgcolor="LightYellow">How often would you like to have meetings?</td>
+                  <td bgcolor="LightGrey"><select name="often">
+                        <option></option>
+                        <option value="Every month,">Every month</option>
+                        <option value="Every 2 months,">Every 2 months</option>
+                        <option value="Every 3 months,">Every 3 months</option>
+                        <option value="Unsure,">Unsure</option>
+                     </select>
+                  </td>
+               </tr>
+               <tr>
+                  <td valign="top" bgcolor="LightYellow">What day of the week best fits your schedule?</td>
+                  <td bgcolor="LightGrey"><select name="day">
+                        <option></option>
+                        <option value="Sunday,">Sunday</option>
+                        <option value="Monday,">Monday</option>
+                        <option value="Tuesday,">Tuesday</option>
+                        <option value="Wednesday,">Wednesday</option>
+                        <option value="Thursday,">Thursday</option>
+                        <option value="Friday,">Friday</option>
+                        <option value="Saturday,">Saturday</option>
+                     </select>
+                  </td>
+               </tr>
+               <tr>
+                  <td valign="top" bgcolor="LightYellow">Assuming a 2 hour meeting, what time best fits your schedule?</td>
+                  <td bgcolor="LightGrey">
+                     (hh:mm)
+                     <input type="text" name="time"></td>
+               </tr>
+               <tr>
+                  <td valign="top" bgcolor="LightYellow">What is the earliest time you can make possibly it?</td>
+                  <td bgcolor="LightGrey">
+                     (hh:mm)
+                     <input type="text" name="earliest"></td>
+               </tr>
+               <tr>
+                  <td valign="top" bgcolor="LightYellow">What is the latest time you could possibly leave?</td>
+                  <td bgcolor="LightGrey">
+                     (hh:mm)
+                     <input type="text" name="latest"></td>
+               </tr>
+            </table>
+         </center>
+         <center>
+            <h2>Participation</h2>
+            <table border="1">
+               <tr>
+                  <td valign="top" bgcolor="LightYellow">Would you be willing to volunteer to help?</td>
+                  <td bgcolor="LightGrey">
+                     Yes <input type="radio" name="volunteer" value="Y">
+                     No <input type="radio" name="volunteer" value="N"></td>
+               </tr>
+               <tr>
+                  <td valign="top" bgcolor="LightYellow">If Yes, how?</td>
+                  <td bgcolor="LightGrey">
+                     <table>
+                        <tr>
+                           <td>Librarian</td>
+                           <td><input type="checkbox" name="volunteer-how" value="Librarian,"></td>
+                        </tr>
+                        <tr>
+                           <td>Coordinator</td>
+                           <td><input type="checkbox" name="volunteer-how" value="Coordinator,"></td>
+                        </tr>
+                        <tr>
+                           <td>Web Master</td>
+                           <td><input type="checkbox" name="volunteer-how" value="Web Master,"></td>
+                        </tr>
+                        <tr>
+                           <td>Treasurer</td>
+                           <td><input type="checkbox" name="volunteer-how" value="Treasurer,"></td>
+                        </tr>
+                     </table>
+                     Other: <input type="text" name="volunteer-how"></td>
+               </tr>
+            </table>
+         </center>
+         <center>
+            <h2>Knowledge</h2>
+            <table border="1">
+               <tr>
+                  <td valign="top" bgcolor="LightYellow">Do you understand OO concepts?</td>
+                  <td bgcolor="LightGrey">
+                     Yes <input type="radio" name="understand-OO" value="Y">
+                     No <input type="radio" name="understand-OO" value="N"></td>
+               </tr>
+               <tr>
+                  <td valign="top" bgcolor="LightYellow">Do you apply OO methodology in your development?</td>
+                  <td bgcolor="LightGrey">
+                     Yes <input type="radio" name="methodology-OO" value="Y">
+                     No <input type="radio" name="methodology-OO" value="N"></td>
+               </tr>
+               <tr>
+                  <td valign="top" bgcolor="LightYellow">Would you like to learn more about OO?</td>
+                  <td bgcolor="LightGrey">
+                     Yes <input type="radio" name="learn-OO" value="Y">
+                     No <input type="radio" name="learn-OO" value="N"></td>
+               </tr>
+               <tr>
+                  <td valign="top" bgcolor="LightYellow">How would you categorize yourself?</td>
+                  <td bgcolor="LightGrey"><select name="catagory">
+                        <option></option>
+                        <option value="Interested in learning Java from scratch,">Interested in learning Java from scratch</option>
+                        <option value="Java hobbyist,">Java hobbyist</option>
+                        <option value="Professional Java in-house programmer,">Professional Java in-house programmer</option>
+                        <option value="Professional Java contractor,">Professional Java contractor</option>
+                        <option value="Project Manager for Java projects,">Project Manager for Java projects</option>
+                        <option value="Java-based software marketer/salesman/manager,">Java-based software marketer/salesman/manager</option>
+                     </select>
+                  </td>
+               </tr>
+               <tr>
+                  <td valign="top" bgcolor="LightYellow">What language do you currently use most?</td>
+                  <td bgcolor="LightGrey"><select name="language">
+                        <option></option>
+                        <option value="C,">C</option>
+                        <option value="C++,">C++</option>
+                        <option value="Basic,">Basic</option>
+                        <option value="Perl,">Perl</option>
+                        <option value="Python,">Python</option>
+                        <option value="PHP,">PHP</option>
+                        <option value="Pascal,">Pascal</option>
+                        <option value="Java,">Java</option>
+                        <option value="Cobol,">Cobol</option>
+                        <option value="JavaScript,">JavaScript</option>
+                     </select>
+                     Other: <input type="text" name="language"></td>
+               </tr>
+               <tr>
+                  <td valign="top" bgcolor="LightYellow">How many months have you been a programmer?</td>
+                  <td bgcolor="LightGrey"><input type="text" name="programmer-months" onchange="checkNumber(this);"></td>
+               </tr>
+               <tr>
+                  <td valign="top" bgcolor="LightYellow">How many months you been a java developer?</td>
+                  <td bgcolor="LightGrey"><input type="text" name="java-months" onchange="checkNumber(this);"></td>
+               </tr>
+               <tr>
+                  <td valign="top" bgcolor="LightYellow">How would you describe your overall Java proficiency?</td>
+                  <td bgcolor="LightGrey"><select name="java-skill">
+                        <option></option>
+                        <option value="Beginner,">Beginner</option>
+                        <option value="Intermediate,">Intermediate</option>
+                        <option value="Expert,">Expert</option>
+                     </select>
+                  </td>
+               </tr>
+               <tr>
+                  <td valign="top" bgcolor="LightYellow">Choose all that you are familiar with</td>
+                  <td bgcolor="LightGrey">
+                     <table>
+                        <tr>
+                           <td>HTML</td>
+                           <td><input type="checkbox" name="familar-list" value="HTML,"></td>
+                        </tr>
+                        <tr>
+                           <td>OOP</td>
+                           <td><input type="checkbox" name="familar-list" value="OOP,"></td>
+                        </tr>
+                        <tr>
+                           <td>Applets</td>
+                           <td><input type="checkbox" name="familar-list" value="Applets,"></td>
+                        </tr>
+                        <tr>
+                           <td>Collections</td>
+                           <td><input type="checkbox" name="familar-list" value="Collections,"></td>
+                        </tr>
+                        <tr>
+                           <td>EJB</td>
+                           <td><input type="checkbox" name="familar-list" value="EJB,"></td>
+                        </tr>
+                        <tr>
+                           <td>JSSE/JCE</td>
+                           <td><input type="checkbox" name="familar-list" value="JSSE/JCE,"></td>
+                        </tr>
+                        <tr>
+                           <td>Servlets</td>
+                           <td><input type="checkbox" name="familar-list" value="Servlets,"></td>
+                        </tr>
+                        <tr>
+                           <td>JDBC</td>
+                           <td><input type="checkbox" name="familar-list" value="JDBC,"></td>
+                        </tr>
+                        <tr>
+                           <td>JSP</td>
+                           <td><input type="checkbox" name="familar-list" value="JSP,"></td>
+                        </tr>
+                        <tr>
+                           <td>Swing</td>
+                           <td><input type="checkbox" name="familar-list" value="Swing,"></td>
+                        </tr>
+                        <tr>
+                           <td>Java2D</td>
+                           <td><input type="checkbox" name="familar-list" value="Java2D,"></td>
+                        </tr>
+                        <tr>
+                           <td>Java3D</td>
+                           <td><input type="checkbox" name="familar-list" value="Java3D,"></td>
+                        </tr>
+                        <tr>
+                           <td>JMS</td>
+                           <td><input type="checkbox" name="familar-list" value="JMS,"></td>
+                        </tr>
+                        <tr>
+                           <td>JTS</td>
+                           <td><input type="checkbox" name="familar-list" value="JTS,"></td>
+                        </tr>
+                        <tr>
+                           <td>SAX(XML)</td>
+                           <td><input type="checkbox" name="familar-list" value="SAX(XML),"></td>
+                        </tr>
+                        <tr>
+                           <td>JDOM(XML)</td>
+                           <td><input type="checkbox" name="familar-list" value="JDOM(XML),"></td>
+                        </tr>
+                        <tr>
+                           <td>XSL(XML)</td>
+                           <td><input type="checkbox" name="familar-list" value="XSL(XML),"></td>
+                        </tr>
+                        <tr>
+                           <td>RMI/CORBA</td>
+                           <td><input type="checkbox" name="familar-list" value="RMI/CORBA,"></td>
+                        </tr>
+                        <tr>
+                           <td>JNDI</td>
+                           <td><input type="checkbox" name="familar-list" value="JNDI,"></td>
+                        </tr>
+                        <tr>
+                           <td>JINI</td>
+                           <td><input type="checkbox" name="familar-list" value="JINI,"></td>
+                        </tr>
+                     </table>
+                     Other: <input type="text" name="familar-list"></td>
+               </tr>
+               <tr>
+                  <td valign="top" bgcolor="LightYellow">What would you like to learn more about?</td>
+                  <td bgcolor="LightGrey">
+                     <table>
+                        <tr>
+                           <td>HTML</td>
+                           <td><input type="checkbox" name="learn-list" value="HTML,"></td>
+                        </tr>
+                        <tr>
+                           <td>OOP</td>
+                           <td><input type="checkbox" name="learn-list" value="OOP,"></td>
+                        </tr>
+                        <tr>
+                           <td>Applets</td>
+                           <td><input type="checkbox" name="learn-list" value="Applets,"></td>
+                        </tr>
+                        <tr>
+                           <td>Collections</td>
+                           <td><input type="checkbox" name="learn-list" value="Collections,"></td>
+                        </tr>
+                        <tr>
+                           <td>EJB</td>
+                           <td><input type="checkbox" name="learn-list" value="EJB,"></td>
+                        </tr>
+                        <tr>
+                           <td>JSSE/JCE</td>
+                           <td><input type="checkbox" name="learn-list" value="JSSE/JCE,"></td>
+                        </tr>
+                        <tr>
+                           <td>Servlets</td>
+                           <td><input type="checkbox" name="learn-list" value="Servlets,"></td>
+                        </tr>
+                        <tr>
+                           <td>JDBC</td>
+                           <td><input type="checkbox" name="learn-list" value="JDBC,"></td>
+                        </tr>
+                        <tr>
+                           <td>JSP</td>
+                           <td><input type="checkbox" name="learn-list" value="JSP,"></td>
+                        </tr>
+                        <tr>
+                           <td>Swing</td>
+                           <td><input type="checkbox" name="learn-list" value="Swing,"></td>
+                        </tr>
+                        <tr>
+                           <td>Java2D</td>
+                           <td><input type="checkbox" name="learn-list" value="Java2D,"></td>
+                        </tr>
+                        <tr>
+                           <td>Java3D</td>
+                           <td><input type="checkbox" name="learn-list" value="Java3D,"></td>
+                        </tr>
+                        <tr>
+                           <td>JMS</td>
+                           <td><input type="checkbox" name="learn-list" value="JMS,"></td>
+                        </tr>
+                        <tr>
+                           <td>JTS</td>
+                           <td><input type="checkbox" name="learn-list" value="JTS,"></td>
+                        </tr>
+                        <tr>
+                           <td>SAX(XML)</td>
+                           <td><input type="checkbox" name="learn-list" value="SAX(XML),"></td>
+                        </tr>
+                        <tr>
+                           <td>JDOM(XML)</td>
+                           <td><input type="checkbox" name="learn-list" value="JDOM(XML),"></td>
+                        </tr>
+                        <tr>
+                           <td>XSL(XML)</td>
+                           <td><input type="checkbox" name="learn-list" value="XSL(XML),"></td>
+                        </tr>
+                        <tr>
+                           <td>RMI/CORBA</td>
+                           <td><input type="checkbox" name="learn-list" value="RMI/CORBA,"></td>
+                        </tr>
+                        <tr>
+                           <td>JNDI</td>
+                           <td><input type="checkbox" name="learn-list" value="JNDI,"></td>
+                        </tr>
+                        <tr>
+                           <td>JINI</td>
+                           <td><input type="checkbox" name="learn-list" value="JINI,"></td>
+                        </tr>
+                     </table>
+                     Other: <input type="text" name="learn-list"></td>
+               </tr>
+               <tr>
+                  <td valign="top" bgcolor="LightYellow">Do you use open source software?</td>
+                  <td bgcolor="LightGrey">
+                     Yes <input type="radio" name="opensource-use" value="Y">
+                     No <input type="radio" name="opensource-use" value="N"></td>
+               </tr>
+               <tr>
+                  <td valign="top" bgcolor="LightYellow">Have you contributed to any open software projects?</td>
+                  <td bgcolor="LightGrey">
+                     Yes <input type="radio" name="opensource-contrib" value="Y">
+                     No <input type="radio" name="opensource-contrib" value="N"></td>
+               </tr>
+            </table>
+         </center>
+         <center>
+            <h2>Development Environment</h2>
+            <table border="1">
+               <tr>
+                  <td valign="top" bgcolor="LightYellow">What IDE (if any) do you use?</td>
+                  <td bgcolor="LightGrey"><select name="ide">
+                        <option></option>
+                        <option value="Forte,">Forte</option>
+                        <option value="JBuilder,">JBuilder</option>
+                        <option value="PowerJ,">PowerJ</option>
+                        <option value="Visual Age,">Visual Age</option>
+                        <option value="Visual Cafe,">Visual Cafe</option>
+                        <option value="Visual J++,">Visual J++</option>
+                     </select>
+                     Other: <input type="text" name="ide"></td>
+               </tr>
+               <tr>
+                  <td valign="top" bgcolor="LightYellow">What server software (if any) do you use?</td>
+                  <td bgcolor="LightGrey"><select name="server">
+                        <option></option>
+                        <option value="Apache w/JServ,">Apache w/JServ</option>
+                        <option value="J2EE,">J2EE</option>
+                        <option value="JBoss,">JBoss</option>
+                        <option value="JRun,">JRun</option>
+                        <option value="SilverStream,">SilverStream</option>
+                        <option value="Tomcat,">Tomcat</option>
+                        <option value="WebLogic,">WebLogic</option>
+                        <option value="WebSphere,">WebSphere</option>
+                     </select>
+                     Other: <input type="text" name="server"></td>
+               </tr>
+               <tr>
+                  <td valign="top" bgcolor="LightYellow">What OS do you use?</td>
+                  <td bgcolor="LightGrey"><select name="os">
+                        <option></option>
+                        <option value="Win 95/98,">Win 95/98</option>
+                        <option value="Win NT/2000,">Win NT/2000</option>
+                        <option value="Linux,">Linux</option>
+                        <option value="Unix,">Unix</option>
+                        <option value="Mac,">Mac</option>
+                        <option value="AS400,">AS400</option>
+                     </select>
+                     Other: <input type="text" name="os"></td>
+               </tr>
+            </table>
+         </center>
+         <center>
+            <h2>Employment</h2>
+            <table>
+               <tr>
+                  <td bgcolor="White">The following information is optional.</td>
+               </tr>
+            </table>
+            <table border="1">
+               <tr>
+                  <td valign="top" bgcolor="LightYellow">What is your current position?</td>
+                  <td bgcolor="LightGrey"><select name="position">
+                        <option></option>
+                        <option value="Contractor,">Contractor</option>
+                        <option value="Programmer: In-house development,">Programmer: In-house development</option>
+                        <option value="Programmer: Product development,">Programmer: Product development</option>
+                        <option value="Programmer: Project development,">Programmer: Project development</option>
+                        <option value="Project/Product Manager,">Project/Product Manager</option>
+                     </select>
+                  </td>
+               </tr>
+               <tr>
+                  <td valign="top" bgcolor="LightYellow">Will you be/Are you actively seeking new employment as a Java developer?</td>
+                  <td bgcolor="LightGrey">
+                     Yes <input type="radio" name="seeking" value="Y">
+                     No <input type="radio" name="seeking" value="N"></td>
+               </tr>
+               <tr>
+                  <td valign="top" bgcolor="LightYellow">If yes, when will you be available?</td>
+                  <td bgcolor="LightGrey">
+                     (mm/dd/yyyy)
+                     <input type="text" name="available" onchange="checkDate(this);"></td>
+               </tr>
+               <tr>
+                  <td valign="top" bgcolor="LightYellow">Are you actively looking to hire new Java employees?</td>
+                  <td bgcolor="LightGrey">
+                     Yes <input type="radio" name="hiring" value="Y">
+                     No <input type="radio" name="hiring" value="N"></td>
+               </tr>
+               <tr>
+                  <td valign="top" bgcolor="LightYellow">If yes, Permanent or contract?</td>
+                  <td bgcolor="LightGrey"><select name="hiring-type">
+                        <option></option>
+                        <option value="Permanent,">Permanent</option>
+                        <option value="Contract,">Contract</option>
+                        <option value="Uncertain,">Uncertain</option>
+                     </select>
+                  </td>
+               </tr>
+               <tr>
+                  <td valign="top" bgcolor="LightYellow">If on contract, how many months?</td>
+                  <td bgcolor="LightGrey"><input type="text" name="contract-months" onchange="checkNumber(this);"></td>
+               </tr>
+            </table>
+         </center>
+         <center><input type="submit" name="Submit" value="Submit"><input type="reset" name="Reset" value="Reset"></center>
+      </form>
+   </body>
+</html>

@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+
+<!-- $Id$ -->
+
+<!-- Copyright (c) 2001 IndyJUG.  All rights reserved. -->
+
+<!-- ======================================================================= -->
+<!-- Build file                                                              -->
+<!-- ======================================================================= -->
+
+<project name="Performance Lab" default="main" basedir=".">
+
+  <property name="Name" value="Performance Lab"/>
+  <property name="name" value="Performance Lab"/>
+  <property name="fullname" value="Performance Lab"/>
+  <property name="version" value="0.1"/>
+
+  <property name="ant.home" value="."/>
+  <property name="build.dir" value="."/>
+  <property name="src.dir" value="${build.dir}"/>
+
+  <property name="debug" value="on"/>
+  <property name="optimize" value="off"/>
+
+  <property name="build.classes" value="${build.dir}"/>
+  <property name="build.javadocs" value="${build.dir}/javadoc"/>
+  
+<!--  <property name="classpath" value=""/> -->
+  <property name="sourcefiles" value="PerformanceLab.java,StringTest.java"/>
+  <property name="packages" value="PerfLab"/>
+  <property name="packages.windowtitle" value="${fullname} API Specification"/>
+  <property name="packages.doctitle" value="${fullname} API Specification"/>
+  <property name="packages.header" value="&lt;b&gt;${fullname}&lt;/b&gt;"/>
+  <property name="packages.bottom" value="&lt;font size=&quot;-1&quot;&gt;Copyright &amp;copy; 2000 IndyJUG.&lt;br&gt;  All Rights Reserved.&lt;/pre&gt;&lt;/font&gt;"/>
+<!--  <property name="manifest" value=""/> -->
+
+  <property name="build.compiler" value="classic"/>
+
+  <!-- Give user a chance to override without editing this file 
+       (and without typing -D each time it compiles it -->
+  <property file="${user.home}/.ant.properties" />
+
+  <property name="class.root" value="${build.classes}"/>
+  <property name="package.root" value="PerfLab"/>
+
+  <path id="classpath">
+     <pathelement location="${build.classes}"/>
+  </path>
+
+  <target name="prepare">
+    <tstamp/>
+  </target>
+
+  <!-- =================================================================== -->
+  <!-- Compiles the source code                                            -->
+  <!-- =================================================================== -->
+  <target name="compile">
+    <mkdir dir="${build.classes}"/>
+
+    <javac srcdir="${src.dir}"
+           destdir="${build.classes}"
+           debug="${debug}"
+           deprecation="off"
+           optimize="${optimize}" >
+      <classpath refid="classpath"/>
+      <include name="**/*.java"/>
+    </javac>
+  </target>
+
+  <!-- =================================================================== -->
+  <!-- Creates the jar archive                                             -->
+  <!-- =================================================================== -->
+  <target name="jar" depends="compile">
+    <delete dir="${build.classes}"
+       includes="perflab.jar"
+    />
+
+    <jar jarfile="${build.classes}/perflab.jar"
+         basedir="${build.classes}"
+         includes="**/*.class"
+    />
+  </target>
+
+  <!-- =================================================================== -->
+  <!-- Creates the binary structure                                        -->
+  <!-- =================================================================== -->
+  <target name="main" depends="javadocs">
+  </target>
+
+  <!-- =================================================================== -->
+  <!-- Creates the API documentation                                       -->
+  <!-- =================================================================== -->
+  <target name="javadocs" depends="jar">
+    <mkdir dir="${build.javadocs}"/>
+    <javadoc sourcefiles="${sourcefiles}"
+             sourcepath="${src.dir}"
+             destdir="${build.javadocs}"
+             author="true"
+             private="true"
+             use="true"
+             splitindex="true"
+             version="true"
+             windowtitle="${packages.windowtitle}"
+             doctitle="${packages.doctitle}"
+             header="${packages.header}"
+             bottom="${packages.bottom}">
+      <classpath refid="classpath"/>
+    </javadoc>
+  </target>
+</project>

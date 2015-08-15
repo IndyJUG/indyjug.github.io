@@ -1,0 +1,10 @@
+<!--#include virtual="/itop.shtml" -->
+
+Meetings are usually held on the Third Wednesday of each month. For specific meeting information and to RSVP, please see our <a href="http://www.meetup.com/Indianapolis-Java-User-Group/">Meetup</a> site.<br>
+<br>
+<!--#include virtual="/location.html" -->
+<br>
+
+<!--#include virtual="/meetingtable.html" -->
+
+<!--#include virtual="/ibottom.shtml" -->

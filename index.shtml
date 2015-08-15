@@ -1,0 +1,26 @@
+<!--#include virtual="/itop.shtml" -->
+
+The IndyJUG is a group of professionals and hobbyists in the Indianapolis area who share an interest in Java technology. Many of us work with Java every day at work while others are students or professionals who have not yet worked with Java.<br>
+<br>
+The goal of the IndyJUG is to promote the use of the Java language and components across all levels of interest in the greater Indianapolis area, by serving as a resource for knowledge, experience and career opportunities.<br>
+<br>
+<p>Everyone is welcome and encouraged to participate.</p><br>
+
+<p><b>Getting Involved</b></p>
+To get involved, we suggest you come to our <a href="http://www.indyjug.net/meetings.shtml">next meeting</a>, and also sign up on our <a href="http://www.indyjug.net/forum.shtml">Yahoo Discussion Forum</a> and/or our <a href="http://www.linkedin.com/groups?gid=3662644">LinkedIn group</a> for discussion and announcements.<br>
+<br>
+By joining the forum, you'll be sure to receive announcements and related information about IndyJUG.<br>
+<br>
+<p><b>Looking to hire/recruit?</b></p>
+Please feel free to post job openings and inquiries to the <a href="/forum.shtml">list</a>. We encourage recruiters and representatives to attend our meetings and usually give them the floor before our presentation starts to discuss their opportunities.<br>
+<br>
+<p><b>Want to Sponsor us?</b></p>
+<!--#include virtual="/sponsorinfo.html" -->
+<br>
+
+<p><b>IndyJUG Meeting Location</b></p>
+<table><tr><td valign=top><!--#include virtual="/location.html" --></td><td width=20></td></tr></table>
+<br>
+
+
+<!--#include virtual="/ibottom.shtml" -->

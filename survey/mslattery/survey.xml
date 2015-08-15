@@ -1,0 +1,192 @@
+<?xml version='1.0'?>
+<survey>
+  <group name="Location">
+<!--
+    <field type="text" name="Name"/>
+    <field type="text" name="Email"/>
+-->
+    <field type="text" name="city" caption="City"/>
+    <field type="text" name="areacode" caption="Zip Code"/>
+  </group>
+  <group name="Presentations">
+    <field type="yn" name="present" caption="Would you be willing to give a presentation on material in which you are an expert?"/>
+    <field type="multiple-choice" name="speakers" caption="What kinds of speakers would you most like to see give presentations?">
+      <option>Vendors</option>
+      <option>Professors/Educators</option>
+      <option>Fellow members</option>
+      <option>Industry Experts</option>
+      <other/>
+    </field>
+  </group>
+  <group name="Meetings">
+    <field type="number" name="attendances" caption="How many JUG meetings have you attended in the past?"/>
+    <field type="choice" name="often" caption="How often would you like to have meetings?">
+      <option>Every month</option>
+      <option>Every 2 months</option>
+      <option>Every 3 months</option>
+      <option>Unsure</option>
+    </field>
+    <field type="choice" name="day" caption="What day of the week best fits your schedule?">
+      <option>Sunday</option>
+      <option>Monday</option>
+      <option>Tuesday</option>
+      <option>Wednesday</option>
+      <option>Thursday</option>
+      <option>Friday</option>
+      <option>Saturday</option>
+    </field>
+    <field type="time" name="time" caption="Assuming a 2 hour meeting, what time best fits your schedule?"/>
+    <field type="time" name="earliest" caption="What is the earliest time you can make possibly it?"/>
+    <field type="time" name="latest" caption="What is the latest time you could possibly leave?"/>
+  </group>
+  <group name="Participation">
+    <field type="yn" name="volunteer" caption="Would you be willing to volunteer to help?"/>
+    <field type="multiple-choice" name="volunteer-how" caption="If Yes, how?">
+      <option>Librarian</option>
+      <option>Coordinator</option>
+      <option>Web Master</option>
+      <option>Treasurer</option>
+      <other/>
+    </field>
+  </group>
+  <group name="Knowledge">
+    <field type="yn" name="understand-OO" caption="Do you understand OO concepts?"/>
+    <field type="yn" name="methodology-OO" caption="Do you apply OO methodology in your development?"/>
+    <field type="yn" name="learn-OO" caption="Would you like to learn more about OO?"/>
+    <field type="choice" name="catagory" caption="How would you categorize yourself?">
+      <option>Interested in learning Java from scratch</option>
+      <option>Java hobbyist</option>
+      <option>Professional Java in-house programmer</option>
+      <option>Professional Java contractor</option>
+      <option>Project Manager for Java projects</option>
+      <option>Java-based software marketer/salesman/manager</option>
+    </field>
+  
+    <field type="choice" name="language" caption="What language do you currently use most?">
+      <option>C</option>
+      <option>C++</option>
+      <option>Basic</option>
+      <option>Perl</option>
+      <option>Python</option>
+      <option>PHP</option>
+      <option>Pascal</option>
+      <option>Java</option>
+      <option>Cobol</option>
+      <option>JavaScript</option>
+      <other/>
+    </field>
+    
+    <field type="number" name="programmer-months" caption="How many months have you been a programmer?"/>
+    <field type="number" name="java-months" caption="How many months you been a java developer?"/>
+  
+    <field type="choice" name="java-skill" caption="How would you describe your overall Java proficiency?">
+      <option>Beginner</option>
+      <option>Intermediate</option>
+      <option>Expert</option>
+    </field>
+  
+    <field type="multiple-choice" name="familar-list" caption="Choose all that you are familiar with">
+      <option>HTML</option>
+      <option>OOP</option>
+      <option>Applets</option>
+      <option>Collections</option>
+      <option>EJB</option>
+      <option>JSSE/JCE</option>
+      <option>Servlets</option>
+      <option>JDBC</option>
+      <option>JSP</option>
+      <option>Swing</option>
+      <option>Java2D</option>
+      <option>Java3D</option>
+      <option>JMS</option>
+      <option>JTS</option>
+      <option>SAX(XML)</option>
+      <option>JDOM(XML)</option>
+      <option>XSL(XML)</option>
+      <option>RMI/CORBA</option>
+      <option>JNDI</option>
+      <option>JINI</option>
+      <other/>
+    </field>
+  
+    <field type="multiple-choice" name="learn-list" caption="What would you like to learn more about?">
+      <option>HTML</option>
+      <option>OOP</option>
+      <option>Applets</option>
+      <option>Collections</option>
+      <option>EJB</option>
+      <option>JSSE/JCE</option>
+      <option>Servlets</option>
+      <option>JDBC</option>
+      <option>JSP</option>
+      <option>Swing</option>
+      <option>Java2D</option>
+      <option>Java3D</option>
+      <option>JMS</option>
+      <option>JTS</option>
+      <option>SAX(XML)</option>
+      <option>JDOM(XML)</option>
+      <option>XSL(XML)</option>
+      <option>RMI/CORBA</option>
+      <option>JNDI</option>
+      <option>JINI</option>
+      <other/>
+    </field>
+  
+    <field type="yn" name="opensource-use" caption="Do you use open source software?"/>
+    <field type="yn" name="opensource-contrib" caption="Have you contributed to any open software projects?"/>
+  </group>
+  
+  <group name="Development Environment">
+    <field type="choice" name="ide" caption="What IDE (if any) do you use?">
+      <option>Forte</option>
+      <option>JBuilder</option>
+      <option>PowerJ</option>
+      <option>Visual Age</option>
+      <option>Visual Cafe</option>
+      <option>Visual J++</option>
+      <other/>
+    </field>
+    <field type="choice" name="server" caption="What server software (if any) do you use?">
+      <option>Apache w/JServ</option>
+      <option>J2EE</option>
+      <option>JBoss</option>
+      <option>JRun</option>
+      <option>SilverStream</option>
+      <option>Tomcat</option>
+      <option>WebLogic</option>
+      <option>WebSphere</option>
+      <other/>
+    </field>
+    <field type="choice" name="os" caption="What OS do you use?">
+      <option>Win 95/98</option>
+      <option>Win NT/2000</option>
+      <option>Linux</option>
+      <option>Unix</option>
+      <option>Mac</option>
+      <option>AS400</option>
+      <other/>
+    </field>
+  </group>
+  
+  <group name="Employment">
+  
+    <field type="choice" name="position" caption="What is your current position?">
+      <option>Contractor</option>
+      <option>Programmer: In-house development</option>
+      <option>Programmer: Product development</option>
+      <option>Programmer: Project development</option>
+      <option>Project/Product Manager</option>
+    </field>
+  
+    <field type="yn" name="seeking" caption="Will you be/Are you actively seeking new employment as a Java developer?"/>
+    <field type="date" name="available" caption="If yes, when will you be available?"/>
+    <field type="yn" name="hiring" caption="Are you actively looking to hire new Java employees?"/>
+    <field type="choice" name="hiring-type" caption="If yes, Permanent or contract?">
+      <option>Permanent</option>
+      <option>Contract</option>
+      <option>Uncertain</option>
+    </field>
+    <field type="number" name="contract-months" caption="If on contract, how many months?"/>
+  </group>  
+</survey>

@@ -1,0 +1,1340 @@
+This is the result of the web-based survey of IndyJUG members.
+
+  Group: Location
+
+City  Noblesville
+Area Code  IN
+
+  Group: Presentations
+
+Would you be willing to give a presentation on material in which you are an expert?  Y
+What kinds of speakers would you most like to see give presentations?  Vendors, Professors/Educators, Fellow members, Industry Experts, 
+
+  Group: Meetings
+
+How many JUG meetings have you attended in the past?  5
+How often would you like to have meetings?  Every 3 months,
+What day of the week best fits your schedule?  Wednesday,
+Assuming a 2 hour meeting, what time best fits your schedule?  6:00
+What is the earliest time you can make possibly it?  6:00
+What is the latest time you could possibly leave?  10:00
+
+  Group: Participation
+
+Would you be willing to volunteer to help?  Y
+If Yes, how?  Small role
+
+  Group: Knowledge
+
+Do you understand OO concepts?  Y
+Do you apply OO methodology in your development?  Y
+Would you like to learn more about OO?  Y
+How would you categorize yourself?  Java hobbyist,
+What language do you currently use most?  Basic, 
+How many months have you been a programmer?  36
+How many months you been a java developer?  12
+How would you describe your overall Java proficiency?  Beginner,
+Choose all that you are familiar with  HTML, OOP, Applets, Servlets, JDBC, JSP, Swing, Java2D, 
+What would you like to learn more about?  EJB, JDBC, JSP, Swing, Java2D, XSL(XML), JNDI, JINI, 
+Do you use open source software?  Y
+Have you contributed to any open software projects?  N
+
+  Group: Development Environment
+
+What IDE (if any) do you use?   
+What server software (if any) do you use?   
+What OS do you use?  Win NT/2000, 
+
+  Group: Employment
+
+
+    The following information is optional.
+
+What is your current position?  Project/Product Manager,
+Will you be/Are you actively seeking new employment as a Java developer?  N
+If yes, when will you be available?  
+Are you actively looking to hire new Java employees?  N
+If yes, Permanent or contract?  
+If on contract, how many months?  
+This is the result of the web-based survey of IndyJUG members.
+
+  Group: Location
+
+City  Lebanon
+Area Code  46052
+
+  Group: Presentations
+
+Would you be willing to give a presentation on material in which you are an expert?  N
+What kinds of speakers would you most like to see give presentations?  Vendors, Professors/Educators, Fellow members, Industry Experts, 
+
+  Group: Meetings
+
+How many JUG meetings have you attended in the past?  none
+How often would you like to have meetings?  Every 3 months,
+What day of the week best fits your schedule?  Thursday,
+Assuming a 2 hour meeting, what time best fits your schedule?  17:00
+What is the earliest time you can make possibly it?  17:00
+What is the latest time you could possibly leave?  20:00
+
+  Group: Participation
+
+Would you be willing to volunteer to help?  Y
+If Yes, how?  Librarian, Coordinator, Treasurer, 
+
+  Group: Knowledge
+
+Do you understand OO concepts?  N
+Do you apply OO methodology in your development?  N
+Would you like to learn more about OO?  Y
+How would you categorize yourself?  Interested in learning Java from scratch,
+What language do you currently use most?   Oracle Developer/SQL Scripts
+How many months have you been a programmer?  180
+How many months you been a java developer?  0
+How would you describe your overall Java proficiency?  Beginner,
+Choose all that you are familiar with  HTML, Applets, Servlets, JDBC, JSP, 
+What would you like to learn more about?  HTML, OOP, Applets, Collections, EJB, JSSE/JCE, Servlets, JDBC, JSP, Swing, Java2D, Java3D, JMS, JTS, SAX(XML), JDOM(XML), XSL(XML), RMI/CORBA, JNDI, JINI, 
+Do you use open source software?  N
+Have you contributed to any open software projects?  N
+
+  Group: Development Environment
+
+What IDE (if any) do you use?  JBuilder, 
+What server software (if any) do you use?  Tomcat, 
+What OS do you use?  Win NT/2000, 
+
+  Group: Employment
+
+
+    The following information is optional.
+
+What is your current position?  Programmer: In-house development,
+Will you be/Are you actively seeking new employment as a Java developer?  N
+If yes, when will you be available?  
+Are you actively looking to hire new Java employees?  N
+If yes, Permanent or contract?  
+If on contract, how many months?  
+This is the result of the web-based survey of IndyJUG members.
+
+  Group: Location
+
+City  Zionsville
+Area Code  46077
+
+  Group: Presentations
+
+Would you be willing to give a presentation on material in which you are an expert?  Y
+What kinds of speakers would you most like to see give presentations?  Fellow members, Industry Experts, 
+
+  Group: Meetings
+
+How many JUG meetings have you attended in the past?  0
+How often would you like to have meetings?  Every month,
+What day of the week best fits your schedule?  Wednesday,
+Assuming a 2 hour meeting, what time best fits your schedule?  6:00pm
+What is the earliest time you can make possibly it?  5:00pm
+What is the latest time you could possibly leave?  10:00pm
+
+  Group: Participation
+
+Would you be willing to volunteer to help?  Y
+If Yes, how?  Coordinator, Web Master, 
+
+  Group: Knowledge
+
+Do you understand OO concepts?  Y
+Do you apply OO methodology in your development?  Y
+Would you like to learn more about OO?  Y
+How would you categorize yourself?  Java hobbyist,
+What language do you currently use most?  C++, 
+How many months have you been a programmer?  100
+How many months you been a java developer?  4
+How would you describe your overall Java proficiency?  Intermediate,
+Choose all that you are familiar with  HTML, OOP, Applets, JDBC, 
+What would you like to learn more about?  JDBC, 
+Do you use open source software?  N
+Have you contributed to any open software projects?  N
+
+  Group: Development Environment
+
+What IDE (if any) do you use?  JBuilder, 
+What server software (if any) do you use?   
+What OS do you use?  Win 95/98, 
+
+  Group: Employment
+
+
+    The following information is optional.
+
+What is your current position?  Programmer: Product development,
+Will you be/Are you actively seeking new employment as a Java developer?  
+If yes, when will you be available?  
+Are you actively looking to hire new Java employees?  
+If yes, Permanent or contract?  
+If on contract, how many months?  
+This is the result of the web-based survey of IndyJUG members.
+
+  Group: Location
+
+City  Indianapolis
+Area Code  46208
+
+  Group: Presentations
+
+Would you be willing to give a presentation on material in which you are an expert?  Y
+What kinds of speakers would you most like to see give presentations?  Professors/Educators, Industry Experts, 
+
+  Group: Meetings
+
+How many JUG meetings have you attended in the past?  0
+How often would you like to have meetings?  Every 2 months,
+What day of the week best fits your schedule?  Monday,
+Assuming a 2 hour meeting, what time best fits your schedule?  6:00
+What is the earliest time you can make possibly it?  5:00
+What is the latest time you could possibly leave?  9:00
+
+  Group: Participation
+
+Would you be willing to volunteer to help?  Y
+If Yes, how?  Librarian, Coordinator, 
+
+  Group: Knowledge
+
+Do you understand OO concepts?  Y
+Do you apply OO methodology in your development?  Y
+Would you like to learn more about OO?  Y
+How would you categorize yourself?  Professional Java contractor,
+What language do you currently use most?  Java, 
+How many months have you been a programmer?  80
+How many months you been a java developer?  24
+How would you describe your overall Java proficiency?  Intermediate,
+Choose all that you are familiar with  HTML, OOP, Applets, Collections, EJB, Servlets, JDBC, JSP, 
+What would you like to learn more about?  SAX(XML), JDOM(XML), XSL(XML), RMI/CORBA, JNDI, JINI, 
+Do you use open source software?  N
+Have you contributed to any open software projects?  N
+
+  Group: Development Environment
+
+What IDE (if any) do you use?  Visual Age, 
+What server software (if any) do you use?  WebSphere, 
+What OS do you use?  Win NT/2000, 
+
+  Group: Employment
+
+
+    The following information is optional.
+
+What is your current position?  Contractor,
+Will you be/Are you actively seeking new employment as a Java developer?  Y
+If yes, when will you be available?  4/1/2001
+Are you actively looking to hire new Java employees?  Y
+If yes, Permanent or contract?  Permanent,
+If on contract, how many months?  
+This is the result of the web-based survey of IndyJUG members.
+
+  Group: Location
+
+City  Westfield
+Area Code  46074
+
+  Group: Presentations
+
+Would you be willing to give a presentation on material in which you are an expert?  N
+What kinds of speakers would you most like to see give presentations?  Vendors, Professors/Educators, Fellow members, Industry Experts, 
+
+  Group: Meetings
+
+How many JUG meetings have you attended in the past?  0
+How often would you like to have meetings?  Every month,
+What day of the week best fits your schedule?  
+Assuming a 2 hour meeting, what time best fits your schedule?  19:00
+What is the earliest time you can make possibly it?  18:00
+What is the latest time you could possibly leave?  21:30
+
+  Group: Participation
+
+Would you be willing to volunteer to help?  Y
+If Yes, how?  Librarian, Web Master, Treasurer, 
+
+  Group: Knowledge
+
+Do you understand OO concepts?  Y
+Do you apply OO methodology in your development?  Y
+Would you like to learn more about OO?  Y
+How would you categorize yourself?  Professional Java in-house programmer,
+What language do you currently use most?  Java, 
+How many months have you been a programmer?  84
+How many months you been a java developer?  6
+How would you describe your overall Java proficiency?  Beginner,
+Choose all that you are familiar with  HTML, OOP, Collections, EJB, Servlets, JDBC, JSP, JMS, 
+What would you like to learn more about?  OOP, Applets, Collections, EJB, JSSE/JCE, Servlets, JDBC, JSP, Swing, Java2D, Java3D, JMS, JTS, SAX(XML), JDOM(XML), XSL(XML), RMI/CORBA, JNDI, JINI, 
+Do you use open source software?  N
+Have you contributed to any open software projects?  N
+
+  Group: Development Environment
+
+What IDE (if any) do you use?  JBuilder, 
+What server software (if any) do you use?  WebLogic, 
+What OS do you use?  Win NT/2000, UNIX
+
+  Group: Employment
+
+
+    The following information is optional.
+
+What is your current position?  Programmer: Product development,
+Will you be/Are you actively seeking new employment as a Java developer?  Y
+If yes, when will you be available?  
+Are you actively looking to hire new Java employees?  N
+If yes, Permanent or contract?  
+If on contract, how many months?  
+This is the result of the web-based survey of IndyJUG members.
+
+  Group: Location
+
+City  Indianapolis
+Area Code  46241
+
+  Group: Presentations
+
+Would you be willing to give a presentation on material in which you are an expert?  Y
+What kinds of speakers would you most like to see give presentations?  Fellow members, Industry Experts, 
+
+  Group: Meetings
+
+How many JUG meetings have you attended in the past?  none
+How often would you like to have meetings?  Every month,
+What day of the week best fits your schedule?  Thursday,
+Assuming a 2 hour meeting, what time best fits your schedule?  6:30
+What is the earliest time you can make possibly it?  5:30
+What is the latest time you could possibly leave?  9:30
+
+  Group: Participation
+
+Would you be willing to volunteer to help?  Y
+If Yes, how?  Career Placement Advisor
+
+  Group: Knowledge
+
+Do you understand OO concepts?  Y
+Do you apply OO methodology in your development?  N
+Would you like to learn more about OO?  Y
+How would you categorize yourself?  Java-based software marketer/salesman/manager,
+What language do you currently use most?   
+How many months have you been a programmer?  0
+How many months you been a java developer?  0
+How would you describe your overall Java proficiency?  Beginner,
+Choose all that you are familiar with  
+What would you like to learn more about?  HTML, EJB, JSSE/JCE, Servlets, JDBC, JSP, Swing, Java2D, Java Beans
+Do you use open source software?  N
+Have you contributed to any open software projects?  N
+
+  Group: Development Environment
+
+What IDE (if any) do you use?   
+What server software (if any) do you use?   
+What OS do you use?   
+
+  Group: Employment
+
+
+    The following information is optional.
+
+What is your current position?  
+Will you be/Are you actively seeking new employment as a Java developer?  N
+If yes, when will you be available?  
+Are you actively looking to hire new Java employees?  Y
+If yes, Permanent or contract?  Contract,
+If on contract, how many months?  varies
+This is the result of the web-based survey of IndyJUG members.
+
+  Group: Location
+
+City  Indianapolis
+Area Code  46236
+
+  Group: Presentations
+
+Would you be willing to give a presentation on material in which you are an expert?  Y
+What kinds of speakers would you most like to see give presentations?  Fellow members, 
+
+  Group: Meetings
+
+How many JUG meetings have you attended in the past?  4
+How often would you like to have meetings?  Every 3 months,
+What day of the week best fits your schedule?  Wednesday,
+Assuming a 2 hour meeting, what time best fits your schedule?  18:00
+What is the earliest time you can make possibly it?  17:00
+What is the latest time you could possibly leave?  21:00
+
+  Group: Participation
+
+Would you be willing to volunteer to help?  N
+If Yes, how?  
+
+  Group: Knowledge
+
+Do you understand OO concepts?  Y
+Do you apply OO methodology in your development?  Y
+Would you like to learn more about OO?  Y
+How would you categorize yourself?  Java hobbyist,
+What language do you currently use most?  Java, 
+How many months have you been a programmer?  14
+How many months you been a java developer?  0
+How would you describe your overall Java proficiency?  Intermediate,
+Choose all that you are familiar with  HTML, OOP, Applets, Collections, Servlets, Swing, Java2D, 
+What would you like to learn more about?  HTML, OOP, Applets, Collections, Servlets, JDBC, JSP, Swing, Java2D, Java3D, 
+Do you use open source software?  Y
+Have you contributed to any open software projects?  Y
+
+  Group: Development Environment
+
+What IDE (if any) do you use?  Forte, 
+What server software (if any) do you use?   
+What OS do you use?  Win 95/98, NT2K, UNIX, OS/2
+
+  Group: Employment
+
+
+    The following information is optional.
+
+What is your current position?  
+Will you be/Are you actively seeking new employment as a Java developer?  Y
+If yes, when will you be available?  12/01/2001
+Are you actively looking to hire new Java employees?  N
+If yes, Permanent or contract?  
+If on contract, how many months?  
+This is the result of the web-based survey of IndyJUG members.
+
+  Group: Location
+
+City  indianapolis
+Area Code  46235
+
+  Group: Presentations
+
+Would you be willing to give a presentation on material in which you are an expert?  N
+What kinds of speakers would you most like to see give presentations?  Professors/Educators, Fellow members, Industry Experts, 
+
+  Group: Meetings
+
+How many JUG meetings have you attended in the past?  0
+How often would you like to have meetings?  Every 2 months,
+What day of the week best fits your schedule?  Wednesday,
+Assuming a 2 hour meeting, what time best fits your schedule?  20:00
+What is the earliest time you can make possibly it?  18:00
+What is the latest time you could possibly leave?  23:59
+
+  Group: Participation
+
+Would you be willing to volunteer to help?  Y
+If Yes, how?  Coordinator, 
+
+  Group: Knowledge
+
+Do you understand OO concepts?  Y
+Do you apply OO methodology in your development?  Y
+Would you like to learn more about OO?  Y
+How would you categorize yourself?  Professional Java contractor,
+What language do you currently use most?   Visual Basic
+How many months have you been a programmer?  84
+How many months you been a java developer?  12
+How would you describe your overall Java proficiency?  Intermediate,
+Choose all that you are familiar with  HTML, OOP, Applets, EJB, Servlets, JDBC, JSP, 
+What would you like to learn more about?  Collections, Swing, SAX(XML), JDOM(XML), XSL(XML), RMI/CORBA, JNDI, 
+Do you use open source software?  Y
+Have you contributed to any open software projects?  N
+
+  Group: Development Environment
+
+What IDE (if any) do you use?  Visual Age, 
+What server software (if any) do you use?  WebSphere, 
+What OS do you use?  Win 95/98, 
+
+  Group: Employment
+
+
+    The following information is optional.
+
+What is your current position?  Contractor,
+Will you be/Are you actively seeking new employment as a Java developer?  Y
+If yes, when will you be available?  
+Are you actively looking to hire new Java employees?  N
+If yes, Permanent or contract?  
+If on contract, how many months?  
+This is the result of the web-based survey of IndyJUG members.
+
+  Group: Location
+
+City  Indianapolis
+Area Code  46256
+
+  Group: Presentations
+
+Would you be willing to give a presentation on material in which you are an expert?  Y
+What kinds of speakers would you most like to see give presentations?  Fellow members, 
+
+  Group: Meetings
+
+How many JUG meetings have you attended in the past?  8
+How often would you like to have meetings?  Every 2 months,
+What day of the week best fits your schedule?  Wednesday,
+Assuming a 2 hour meeting, what time best fits your schedule?  6:00
+What is the earliest time you can make possibly it?  5:30
+What is the latest time you could possibly leave?  8:30
+
+  Group: Participation
+
+Would you be willing to volunteer to help?  Y
+If Yes, how?  Coordinator, 
+
+  Group: Knowledge
+
+Do you understand OO concepts?  Y
+Do you apply OO methodology in your development?  N
+Would you like to learn more about OO?  Y
+How would you categorize yourself?  Java hobbyist,
+What language do you currently use most?   RPG, LotusScript
+How many months have you been a programmer?  300
+How many months you been a java developer?  6
+How would you describe your overall Java proficiency?  Beginner,
+Choose all that you are familiar with  HTML, OOP, Collections, 
+What would you like to learn more about?  EJB, JDBC, Swing, RMI/CORBA, 
+Do you use open source software?  Y
+Have you contributed to any open software projects?  N
+
+  Group: Development Environment
+
+What IDE (if any) do you use?  Visual Age, 
+What server software (if any) do you use?  WebSphere, 
+What OS do you use?  AS400, 
+
+  Group: Employment
+
+
+    The following information is optional.
+
+What is your current position?  Contractor,
+Will you be/Are you actively seeking new employment as a Java developer?  N
+If yes, when will you be available?  
+Are you actively looking to hire new Java employees?  N
+If yes, Permanent or contract?  
+If on contract, how many months?  forever
+This is the result of the web-based survey of IndyJUG members.
+
+  Group: Location
+
+City  Indianapolis
+Area Code  46236
+
+  Group: Presentations
+
+Would you be willing to give a presentation on material in which you are an expert?  Y
+What kinds of speakers would you most like to see give presentations?  Professors/Educators, Fellow members, Industry Experts, 
+
+  Group: Meetings
+
+How many JUG meetings have you attended in the past?  
+How often would you like to have meetings?  Every month,
+What day of the week best fits your schedule?  Wednesday,
+Assuming a 2 hour meeting, what time best fits your schedule?  18:00
+What is the earliest time you can make possibly it?  16:00
+What is the latest time you could possibly leave?  21:00
+
+  Group: Participation
+
+Would you be willing to volunteer to help?  Y
+If Yes, how?  Coordinator, Presenter
+
+  Group: Knowledge
+
+Do you understand OO concepts?  Y
+Do you apply OO methodology in your development?  Y
+Would you like to learn more about OO?  Y
+How would you categorize yourself?  Professional Java contractor,
+What language do you currently use most?  Java, 
+How many months have you been a programmer?  120
+How many months you been a java developer?  60
+How would you describe your overall Java proficiency?  Expert,
+Choose all that you are familiar with  HTML, OOP, Applets, Collections, EJB, Servlets, JDBC, JSP, Swing, RMI/CORBA, 
+What would you like to learn more about?  EJB, JSSE/JCE, Java2D, JMS, JTS, SAX(XML), JDOM(XML), XSL(XML), RMI/CORBA, JINI, 
+Do you use open source software?  Y
+Have you contributed to any open software projects?  N
+
+  Group: Development Environment
+
+What IDE (if any) do you use?  Forte, 
+What server software (if any) do you use?  Apache w/JServ, 
+What OS do you use?  Linux, Win NT/2000
+
+  Group: Employment
+
+
+    The following information is optional.
+
+What is your current position?  Contractor,
+Will you be/Are you actively seeking new employment as a Java developer?  Y
+If yes, when will you be available?  02/05/2001
+Are you actively looking to hire new Java employees?  Y
+If yes, Permanent or contract?  Uncertain,
+If on contract, how many months?  6
+This is the result of the web-based survey of IndyJUG members.
+
+  Group: Location
+
+City  Fort Wayne
+Area Code  46804
+
+  Group: Presentations
+
+Would you be willing to give a presentation on material in which you are an expert?  Y
+What kinds of speakers would you most like to see give presentations?  Fellow members, Industry Experts, 
+
+  Group: Meetings
+
+How many JUG meetings have you attended in the past?  0
+How often would you like to have meetings?  Every month,
+What day of the week best fits your schedule?  Thursday,
+Assuming a 2 hour meeting, what time best fits your schedule?  06:30
+What is the earliest time you can make possibly it?  6:00
+What is the latest time you could possibly leave?  9:00
+
+  Group: Participation
+
+Would you be willing to volunteer to help?  Y
+If Yes, how?  Coordinator, Web Master, 
+
+  Group: Knowledge
+
+Do you understand OO concepts?  Y
+Do you apply OO methodology in your development?  Y
+Would you like to learn more about OO?  Y
+How would you categorize yourself?  Professional Java contractor,
+What language do you currently use most?  Java, 
+How many months have you been a programmer?  160
+How many months you been a java developer?  48
+How would you describe your overall Java proficiency?  Expert,
+Choose all that you are familiar with  HTML, OOP, Applets, Collections, EJB, Servlets, JDBC, JSP, Swing, RMI/CORBA, 
+What would you like to learn more about?  Java2D, Java3D, JMS, JTS, XSL(XML), RMI/CORBA, JNDI, JINI, 
+Do you use open source software?  N
+Have you contributed to any open software projects?  N
+
+  Group: Development Environment
+
+What IDE (if any) do you use?   Visual SlickEdit
+What server software (if any) do you use?  WebLogic, 
+What OS do you use?  Win NT/2000, 
+
+  Group: Employment
+
+
+    The following information is optional.
+
+What is your current position?  Contractor,
+Will you be/Are you actively seeking new employment as a Java developer?  Y
+If yes, when will you be available?  02/12/2001
+Are you actively looking to hire new Java employees?  N
+If yes, Permanent or contract?  
+If on contract, how many months?  
+This is the result of the web-based survey of IndyJUG members.
+
+  Group: Location
+
+City  Indianapolis
+Area Code  46227
+
+  Group: Presentations
+
+Would you be willing to give a presentation on material in which you are an expert?  Y
+What kinds of speakers would you most like to see give presentations?  Vendors, Professors/Educators, Fellow members, Industry Experts, 
+
+  Group: Meetings
+
+How many JUG meetings have you attended in the past?  6
+How often would you like to have meetings?  Every month,
+What day of the week best fits your schedule?  
+Assuming a 2 hour meeting, what time best fits your schedule?  6:00
+What is the earliest time you can make possibly it?  5:30
+What is the latest time you could possibly leave?  9:00
+
+  Group: Participation
+
+Would you be willing to volunteer to help?  Y
+If Yes, how?  Librarian, Web Master, Treasurer, 
+
+  Group: Knowledge
+
+Do you understand OO concepts?  Y
+Do you apply OO methodology in your development?  Y
+Would you like to learn more about OO?  Y
+How would you categorize yourself?  Professional Java contractor,
+What language do you currently use most?  Java, 
+How many months have you been a programmer?  120
+How many months you been a java developer?  36
+How would you describe your overall Java proficiency?  Expert,
+Choose all that you are familiar with  HTML, OOP, Applets, Collections, EJB, Servlets, JDBC, JSP, JDOM(XML), XSL(XML), RMI/CORBA, 
+What would you like to learn more about?  EJB, JTS, JNDI, JINI, 
+Do you use open source software?  Y
+Have you contributed to any open software projects?  N
+
+  Group: Development Environment
+
+What IDE (if any) do you use?  JBuilder, VisualAge, Forte
+What server software (if any) do you use?   Orion
+What OS do you use?   NT 4.0
+
+  Group: Employment
+
+
+    The following information is optional.
+
+What is your current position?  Contractor,
+Will you be/Are you actively seeking new employment as a Java developer?  N
+If yes, when will you be available?  
+Are you actively looking to hire new Java employees?  Y
+If yes, Permanent or contract?  Permanent,
+If on contract, how many months?  
+This is the result of the web-based survey of IndyJUG members.
+
+  Group: Location
+
+City  indianapolis
+Area Code  46032
+
+  Group: Presentations
+
+Would you be willing to give a presentation on material in which you are an expert?  N
+What kinds of speakers would you most like to see give presentations?  Fellow members, Industry Experts, 
+
+  Group: Meetings
+
+How many JUG meetings have you attended in the past?  none
+How often would you like to have meetings?  Every 2 months,
+What day of the week best fits your schedule?  Sunday,
+Assuming a 2 hour meeting, what time best fits your schedule?  17:00
+What is the earliest time you can make possibly it?  17:00
+What is the latest time you could possibly leave?  21:00
+
+  Group: Participation
+
+Would you be willing to volunteer to help?  N
+If Yes, how?  
+
+  Group: Knowledge
+
+Do you understand OO concepts?  Y
+Do you apply OO methodology in your development?  
+Would you like to learn more about OO?  Y
+How would you categorize yourself?  Interested in learning Java from scratch,
+What language do you currently use most?  Cobol, 
+How many months have you been a programmer?  60+
+How many months you been a java developer?  none
+How would you describe your overall Java proficiency?  Beginner,
+Choose all that you are familiar with  
+What would you like to learn more about?  HTML, OOP, Applets, JDBC, Java3D, 
+Do you use open source software?  
+Have you contributed to any open software projects?  
+
+  Group: Development Environment
+
+What IDE (if any) do you use?   
+What server software (if any) do you use?   
+What OS do you use?  Win 95/98, 
+
+  Group: Employment
+
+
+    The following information is optional.
+
+What is your current position?  Contractor,
+Will you be/Are you actively seeking new employment as a Java developer?  
+If yes, when will you be available?  
+Are you actively looking to hire new Java employees?  
+If yes, Permanent or contract?  
+If on contract, how many months?  
+This is the result of the web-based survey of IndyJUG members.
+
+  Group: Location
+
+City  Carmel
+Area Code  46032
+
+  Group: Presentations
+
+Would you be willing to give a presentation on material in which you are an expert?  Y
+What kinds of speakers would you most like to see give presentations?  Vendors, Professors/Educators, Fellow members, Industry Experts, 
+
+  Group: Meetings
+
+How many JUG meetings have you attended in the past?  0
+How often would you like to have meetings?  Every 2 months,
+What day of the week best fits your schedule?  Wednesday,
+Assuming a 2 hour meeting, what time best fits your schedule?  6-8 pm
+What is the earliest time you can make possibly it?  4 pm
+What is the latest time you could possibly leave?  9 pm
+
+  Group: Participation
+
+Would you be willing to volunteer to help?  Y
+If Yes, how?  
+
+  Group: Knowledge
+
+Do you understand OO concepts?  Y
+Do you apply OO methodology in your development?  Y
+Would you like to learn more about OO?  Y
+How would you categorize yourself?  Project Manager for Java projects,
+What language do you currently use most?  Java, 
+How many months have you been a programmer?  180
+How many months you been a java developer?  50
+How would you describe your overall Java proficiency?  Expert,
+Choose all that you are familiar with  HTML, OOP, Collections, Servlets, JDBC, JSP, SAX(XML), JDOM(XML), XSL(XML), 
+What would you like to learn more about?  OOP, EJB, 
+Do you use open source software?  Y
+Have you contributed to any open software projects?  Y
+
+  Group: Development Environment
+
+What IDE (if any) do you use?   
+What server software (if any) do you use?  Tomcat, 
+What OS do you use?  Unix, 
+
+  Group: Employment
+
+
+    The following information is optional.
+
+What is your current position?  Programmer: Project development,
+Will you be/Are you actively seeking new employment as a Java developer?  N
+If yes, when will you be available?  
+Are you actively looking to hire new Java employees?  N
+If yes, Permanent or contract?  
+If on contract, how many months?  
+This is the result of the web-based survey of IndyJUG members.
+
+  Group: Location
+
+City  Noblesville
+Area Code  46060
+
+  Group: Presentations
+
+Would you be willing to give a presentation on material in which you are an expert?  N
+What kinds of speakers would you most like to see give presentations?  Vendors, Professors/Educators, Fellow members, Industry Experts, 
+
+  Group: Meetings
+
+How many JUG meetings have you attended in the past?  2
+How often would you like to have meetings?  Every 3 months,
+What day of the week best fits your schedule?  
+Assuming a 2 hour meeting, what time best fits your schedule?  18:00
+What is the earliest time you can make possibly it?  17:00
+What is the latest time you could possibly leave?  19:00
+
+  Group: Participation
+
+Would you be willing to volunteer to help?  N
+If Yes, how?  
+
+  Group: Knowledge
+
+Do you understand OO concepts?  Y
+Do you apply OO methodology in your development?  Y
+Would you like to learn more about OO?  Y
+How would you categorize yourself?  Professional Java in-house programmer,
+What language do you currently use most?  Java, 
+How many months have you been a programmer?  132
+How many months you been a java developer?  50
+How would you describe your overall Java proficiency?  Expert,
+Choose all that you are familiar with  HTML, OOP, Applets, Collections, EJB, Servlets, JDBC, JSP, Swing, JMS, JTS, SAX(XML), RMI/CORBA, JNDI, 
+What would you like to learn more about?  OOP, JSP, JNDI, 
+Do you use open source software?  Y
+Have you contributed to any open software projects?  N
+
+  Group: Development Environment
+
+What IDE (if any) do you use?  Visual Cafe, 
+What server software (if any) do you use?  WebLogic, 
+What OS do you use?  Win NT/2000, 
+
+  Group: Employment
+
+
+    The following information is optional.
+
+What is your current position?  Programmer: Product development,
+Will you be/Are you actively seeking new employment as a Java developer?  N
+If yes, when will you be available?  
+Are you actively looking to hire new Java employees?  N
+If yes, Permanent or contract?  
+If on contract, how many months?  
+This is the result of the web-based survey of IndyJUG members.
+
+  Group: Location
+
+City  Indianapolis
+Area Code  317
+
+  Group: Presentations
+
+Would you be willing to give a presentation on material in which you are an expert?  Y
+What kinds of speakers would you most like to see give presentations?  Industry Experts,
+
+  Group: Meetings
+
+How many JUG meetings have you attended in the past?  0
+How often would you like to have meetings?  Every month,
+What day of the week best fits your schedule?  
+Assuming a 2 hour meeting, what time best fits your schedule?  
+What is the earliest time you can make possibly it?  
+What is the latest time you could possibly leave?  
+
+  Group: Participation
+
+Would you be willing to volunteer to help?  Y
+If Yes, how?  Coordinator,
+
+  Group: Knowledge
+
+Do you understand OO concepts?  Y
+Do you apply OO methodology in your development?  Y
+Would you like to learn more about OO?  Y
+How would you categorize yourself?  Professional Java in-house programmer,
+What language do you currently use most?  Java, 
+How many months have you been a programmer?  22
+How many months you been a java developer?  11
+How would you describe your overall Java proficiency?  Intermediate,
+Choose all that you are familiar with  HTML, OOP, Servlets, JSP, 
+What would you like to learn more about?  EJB, Servlets, JDBC, Swing, XSL(XML), 
+Do you use open source software?  N
+Have you contributed to any open software projects?  N
+
+  Group: Development Environment
+
+What IDE (if any) do you use?  Visual Cafe, 
+What server software (if any) do you use?  JRun, 
+What OS do you use?  Win 95/98, 
+
+  Group: Employment
+
+
+    The following information is optional.
+
+What is your current position?  Programmer: In-house development,
+Will you be/Are you actively seeking new employment as a Java developer?  N
+If yes, when will you be available?  
+Are you actively looking to hire new Java employees?  N
+If yes, Permanent or contract?  
+If on contract, how many months?  
+This is the result of the web-based survey of IndyJUG members.
+
+  Group: Location
+
+City  Indianapolis
+Area Code  317
+
+  Group: Presentations
+
+Would you be willing to give a presentation on material in which you are an expert?  Y
+What kinds of speakers would you most like to see give presentations?  Professors/Educators, Fellow members, Industry Experts,
+
+  Group: Meetings
+
+How many JUG meetings have you attended in the past?  1
+How often would you like to have meetings?  Every 2 months,
+What day of the week best fits your schedule?  Tuesday,
+Assuming a 2 hour meeting, what time best fits your schedule?  19:00
+What is the earliest time you can make possibly it?  18:00
+What is the latest time you could possibly leave?  22:00
+
+  Group: Participation
+
+Would you be willing to volunteer to help?  N
+If Yes, how?  
+
+  Group: Knowledge
+
+Do you understand OO concepts?  Y
+Do you apply OO methodology in your development?  Y
+Would you like to learn more about OO?  Y
+How would you categorize yourself?  Professional Java in-house programmer,
+What language do you currently use most?  Java, 
+How many months have you been a programmer?  24
+How many months you been a java developer?  16
+How would you describe your overall Java proficiency?  Intermediate,
+Choose all that you are familiar with  HTML, OOP, Applets, Collections, EJB, Servlets, JDBC, JSP, Swing, SAX(XML), XSL(XML), RMI/CORBA, JNDI, 
+What would you like to learn more about?  JSSE/JCE, Java2D, Java3D, JINI, 
+Do you use open source software?  Y
+Have you contributed to any open software projects?  Y
+
+  Group: Development Environment
+
+What IDE (if any) do you use?   
+What server software (if any) do you use?  Tomcat, 
+What OS do you use?  Linux, 
+
+  Group: Employment
+
+
+    The following information is optional.
+
+What is your current position?  Programmer: In-house development,
+Will you be/Are you actively seeking new employment as a Java developer?  Y
+If yes, when will you be available?  01/01/2002
+Are you actively looking to hire new Java employees?  N
+If yes, Permanent or contract?  
+If on contract, how many months?  
+This is the result of the web-based survey of IndyJUG members.
+
+  Group: Location
+
+City  Carnel
+Area Code  46033
+
+  Group: Presentations
+
+Would you be willing to give a presentation on material in which you are an expert?  
+What kinds of speakers would you most like to see give presentations?  Vendors, Professors/Educators, Fellow members, Industry Experts,
+
+  Group: Meetings
+
+How many JUG meetings have you attended in the past?  1
+How often would you like to have meetings?  Every month,
+What day of the week best fits your schedule?  Thursday,
+Assuming a 2 hour meeting, what time best fits your schedule?  7:00PM-9:00PM
+What is the earliest time you can make possibly it?  5:00
+What is the latest time you could possibly leave?  
+
+  Group: Participation
+
+Would you be willing to volunteer to help?  Y
+If Yes, how?  Librarian, Coordinator,
+
+  Group: Knowledge
+
+Do you understand OO concepts?  Y
+Do you apply OO methodology in your development?  Y
+Would you like to learn more about OO?  Y
+How would you categorize yourself?  Java hobbyist,
+What language do you currently use most?  Basic, C++
+How many months have you been a programmer?  80
+How many months you been a java developer?  2
+How would you describe your overall Java proficiency?  Intermediate,
+Choose all that you are familiar with  HTML, OOP, Applets, EJB, Servlets, XSL(XML), 
+What would you like to learn more about?  HTML, OOP, Collections, EJB, Servlets, JDBC, JSP, Swing, JMS, JTS, SAX(XML), JDOM(XML), XSL(XML), RMI/CORBA, JNDI, JINI, 
+Do you use open source software?  
+Have you contributed to any open software projects?  
+
+  Group: Development Environment
+
+What IDE (if any) do you use?  JBuilder, 
+What server software (if any) do you use?  JRun, 
+What OS do you use?  Win NT/2000, 
+
+  Group: Employment
+
+
+    The following information is optional.
+
+What is your current position?  Programmer: Product development,
+Will you be/Are you actively seeking new employment as a Java developer?  Y
+If yes, when will you be available?  10/1/2001
+Are you actively looking to hire new Java employees?  
+If yes, Permanent or contract?  
+If on contract, how many months?  
+This is the result of the web-based survey of IndyJUG members.
+
+  Group: Location
+
+City  Indianapolis
+Area Code  317
+
+  Group: Presentations
+
+Would you be willing to give a presentation on material in which you are an expert?  Y
+What kinds of speakers would you most like to see give presentations?  Fellow members,
+
+  Group: Meetings
+
+How many JUG meetings have you attended in the past?  All but 3
+How often would you like to have meetings?  Every month,
+What day of the week best fits your schedule?  Wednesday,
+Assuming a 2 hour meeting, what time best fits your schedule?  
+What is the earliest time you can make possibly it?  
+What is the latest time you could possibly leave?  
+
+  Group: Participation
+
+Would you be willing to volunteer to help?  Y
+If Yes, how?  
+
+  Group: Knowledge
+
+Do you understand OO concepts?  Y
+Do you apply OO methodology in your development?  Y
+Would you like to learn more about OO?  
+How would you categorize yourself?  Professional Java contractor,
+What language do you currently use most?  Java, 
+How many months have you been a programmer?  84
+How many months you been a java developer?  36
+How would you describe your overall Java proficiency?  Intermediate,
+Choose all that you are familiar with  HTML, OOP, Applets, Collections, Servlets, JDBC, JSP, Swing, SAX(XML), RMI/CORBA, 
+What would you like to learn more about?  EJB, JSSE/JCE, XSL(XML), JINI, 
+Do you use open source software?  Y
+Have you contributed to any open software projects?  N
+
+  Group: Development Environment
+
+What IDE (if any) do you use?   Forte
+What server software (if any) do you use?  JRun, 
+What OS do you use?  Win NT/2000, 
+
+  Group: Employment
+
+
+    The following information is optional.
+
+What is your current position?  Programmer: Product development,
+Will you be/Are you actively seeking new employment as a Java developer?  Y
+If yes, when will you be available?  
+Are you actively looking to hire new Java employees?  N
+If yes, Permanent or contract?  
+If on contract, how many months?  
+This is the result of the web-based survey of IndyJUG members.
+
+  Group: Location
+
+City  Indianapolis
+Area Code  46250
+
+  Group: Presentations
+
+Would you be willing to give a presentation on material in which you are an expert?  Y
+What kinds of speakers would you most like to see give presentations?  Professors/Educators, Fellow members, Industry Experts,
+
+  Group: Meetings
+
+How many JUG meetings have you attended in the past?  0
+How often would you like to have meetings?  Every month,
+What day of the week best fits your schedule?  Wednesday,
+Assuming a 2 hour meeting, what time best fits your schedule?  7pm
+What is the earliest time you can make possibly it?  5:30
+What is the latest time you could possibly leave?  10:30
+
+  Group: Participation
+
+Would you be willing to volunteer to help?  Y
+If Yes, how?  Librarian, Coordinator, Treasurer,
+
+  Group: Knowledge
+
+Do you understand OO concepts?  N
+Do you apply OO methodology in your development?  N
+Would you like to learn more about OO?  Y
+How would you categorize yourself?  Java hobbyist,
+What language do you currently use most?  Java, 
+How many months have you been a programmer?  8
+How many months you been a java developer?  8
+How would you describe your overall Java proficiency?  Beginner,
+Choose all that you are familiar with  HTML, Applets, 
+What would you like to learn more about?  OOP, Applets, Servlets, JDBC, Swing, RMI/CORBA, 
+Do you use open source software?  N
+Have you contributed to any open software projects?  N
+
+  Group: Development Environment
+
+What IDE (if any) do you use?   trying Forte for Java
+What server software (if any) do you use?   
+What OS do you use?  Win 95/98, 
+
+  Group: Employment
+
+
+    The following information is optional.
+
+What is your current position?  
+Will you be/Are you actively seeking new employment as a Java developer?  Y
+If yes, when will you be available?  2/1/2001
+Are you actively looking to hire new Java employees?  N
+If yes, Permanent or contract?  
+If on contract, how many months?  
+This is the result of the web-based survey of IndyJUG members.
+
+  Group: Location
+
+City  Indianapolis
+Area Code  46220
+
+  Group: Presentations
+
+Would you be willing to give a presentation on material in which you are an expert?  Y
+What kinds of speakers would you most like to see give presentations?  Fellow members, Industry Experts,
+
+  Group: Meetings
+
+How many JUG meetings have you attended in the past?  1
+How often would you like to have meetings?  Every month,
+What day of the week best fits your schedule?  Monday,
+Assuming a 2 hour meeting, what time best fits your schedule?  06:00
+What is the earliest time you can make possibly it?  05:30
+What is the latest time you could possibly leave?  10:00
+
+  Group: Participation
+
+Would you be willing to volunteer to help?  Y
+If Yes, how?  Librarian, Coordinator, Web Master, Treasurer,
+
+  Group: Knowledge
+
+Do you understand OO concepts?  Y
+Do you apply OO methodology in your development?  Y
+Would you like to learn more about OO?  N
+How would you categorize yourself?  Professional Java in-house programmer,
+What language do you currently use most?  Java, 
+How many months have you been a programmer?  100
+How many months you been a java developer?  50
+How would you describe your overall Java proficiency?  Expert,
+Choose all that you are familiar with  HTML, OOP, Applets, Collections, JSSE/JCE, Servlets, JDBC, JSP, Swing, SAX(XML), XSL(XML), RMI/CORBA, 
+What would you like to learn more about?  EJB, JSSE/JCE, Java2D, Java3D, JMS, JTS, JDOM(XML), JINI, 
+Do you use open source software?  Y
+Have you contributed to any open software projects?  N
+
+  Group: Development Environment
+
+What IDE (if any) do you use?  JBuilder, 
+What server software (if any) do you use?  Tomcat, 
+What OS do you use?  Win NT/2000, 
+
+  Group: Employment
+
+
+    The following information is optional.
+
+What is your current position?  Programmer: Product development,
+Will you be/Are you actively seeking new employment as a Java developer?  N
+If yes, when will you be available?  
+Are you actively looking to hire new Java employees?  Y
+If yes, Permanent or contract?  Permanent,
+If on contract, how many months?  
+This is the result of the web-based survey of IndyJUG members.
+
+  Group: Location
+
+City  Anderson
+Area Code  46013
+
+  Group: Presentations
+
+Would you be willing to give a presentation on material in which you are an expert?  Y
+What kinds of speakers would you most like to see give presentations?  Fellow members, Industry Experts,
+
+  Group: Meetings
+
+How many JUG meetings have you attended in the past?  2
+How often would you like to have meetings?  Every 2 months,
+What day of the week best fits your schedule?  Tuesday,
+Assuming a 2 hour meeting, what time best fits your schedule?  7:00
+What is the earliest time you can make possibly it?  6:30
+What is the latest time you could possibly leave?  9:00
+
+  Group: Participation
+
+Would you be willing to volunteer to help?  Y
+If Yes, how?  Web Master,
+
+  Group: Knowledge
+
+Do you understand OO concepts?  Y
+Do you apply OO methodology in your development?  Y
+Would you like to learn more about OO?  N
+How would you categorize yourself?  Project Manager for Java projects,
+What language do you currently use most?  Java, 
+How many months have you been a programmer?  180
+How many months you been a java developer?  48
+How would you describe your overall Java proficiency?  Expert,
+Choose all that you are familiar with  HTML, OOP, Applets, Collections, EJB, Servlets, JDBC, Swing, JMS, JTS, RMI/CORBA, JNDI, 
+What would you like to learn more about?  JSSE/JCE, JMS, SAX(XML), XSL(XML), JINI, 
+Do you use open source software?  Y
+Have you contributed to any open software projects?  N
+
+  Group: Development Environment
+
+What IDE (if any) do you use?  JBuilder, 
+What server software (if any) do you use?  JBoss, 
+What OS do you use?  Linux, 
+
+  Group: Employment
+
+
+    The following information is optional.
+
+What is your current position?  Contractor,
+Will you be/Are you actively seeking new employment as a Java developer?  N
+If yes, when will you be available?  
+Are you actively looking to hire new Java employees?  N
+If yes, Permanent or contract?  
+If on contract, how many months?  
+This is the result of the web-based survey of IndyJUG members.
+
+  Group: Location
+
+City  Kokomo
+Area Code  46013
+
+  Group: Presentations
+
+Would you be willing to give a presentation on material in which you are an expert?  Y
+What kinds of speakers would you most like to see give presentations?  Fellow members Industry Experts
+
+  Group: Meetings
+
+How many JUG meetings have you attended in the past?  0
+How often would you like to have meetings?  Every month
+What day of the week best fits your schedule?  Thursday
+Assuming a 2 hour meeting, what time best fits your schedule?  6:00
+What is the earliest time you can make possibly it?  4:00
+What is the latest time you could possibly leave?  10:00
+
+  Group: Participation
+
+Would you be willing to volunteer to help?  Y
+If Yes, how?  Coordinator Web Master
+
+  Group: Knowledge
+
+Do you understand OO concepts?  Y
+Do you apply OO methodology in your development?  Y
+Would you like to learn more about OO?  Y
+How would you categorize yourself?  Professional Java in-house programmer
+What language do you currently use most?  Java
+How many months have you been a programmer?  156
+How many months you been a java developer?  18
+How would you describe your overall Java proficiency?  Intermediate
+Choose all that you are familiar with  HTML OOP Applets Collections EJB JDBC Swing RMI/CORBA JNDI JINI
+What would you like to learn more about?  OOP EJB Servlets JDBC JSP Swing JMS JTS SAX(XML) JDOM(XML) XSL(XML) RMI/CORBA JNDI JINI JBuilder
+Do you use open source software?  Y
+Have you contributed to any open software projects?  N
+
+  Group: Development Environment
+
+What IDE (if any) do you use?  OOP EJB Servlets JDBC JSP Swing JMS JTS SAX(XML) JDOM(XML) XSL(XML) RMI/CORBA JNDI JINI JBuilder
+What server software (if any) do you use?  WebLogic
+What OS do you use?  Unix
+
+  Group: Employment
+
+
+    The following information is optional.
+
+What is your current position?  Project/Product Manager
+Will you be/Are you actively seeking new employment as a Java developer?  Y
+If yes, when will you be available?  
+Are you actively looking to hire new Java employees?  Y
+If yes, Permanent or contract?  Uncertain
+If on contract, how many months?  
+Done.
+Done.
+Done.
+Done.
+Done.
+Done.

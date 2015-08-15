@@ -1,0 +1,29 @@
+<!--#include virtual="/itop.shtml" -->
+
+<h2>Jobs</h2>
+
+Indianapolis is currently experiencing a Java developer shortage.<br>
+<br>
+If you are looking for java work, it should not be too hard to find it.<br>
+<br>
+If you are looking for java workers, that may be more of a challenge.<br>
+<br>
+There are other Java User Groups that are fairly close to Indianapolis that serve their communities as we do.<br>
+If you can't find a job here in Indy or you can't find workers, the other groups do have mailing lists as well that can be leveraged.<br>
+<br>
+It is common to have to sign up to a list before you can post to it.<br>
+<br>
+<table>
+<tr><th>JUG</th><th>List/Email</th></tr>
+<tr><td><a href="http://java.ociweb.com/javasig/">St. Louis</a></td><td><a href="http://tech.groups.yahoo.com/group/stljug/">http://tech.groups.yahoo.com/group/stljug/</a></td></tr>
+<tr><td><a href="http://www.cjug.org/">Chicago</a></td><td><a href="http://tech.groups.yahoo.com/group/chicago-java-advertise/">http://tech.groups.yahoo.com/group/chicago-java-advertise/</a></td></tr>
+<tr><td><a href="http://www.cinjug.org/">Cincinatti</a></td><td><a href="mailto:java-jobs-subscribe@cinjug.org">java-jobs-subscribe@cinjug.org</a></td></tr>
+<tr><td><a href="http://www.cojug.org/">Central Ohio</a></td><td>(Recruiters) <a href="mailto:jobs@cojug.org">jobs@cojug.org</a>, (Job Seekers)<a href="mailto:jobs-subscribe@cojug.org">jobs-subscribe@cojug.org</a></td></tr>
+</table>
+<br>
+Some of these groups have multiple mailing lists, so please visit their sites if you are interested in more than just job postings.<br>
+<br>
+If you want to search a little wider than that, you can consult <a href="http://community.java.net/java-user-groups">java.net</a>.<br>
+In addition, there are other online communities such as <a href="http://java.meetup.com/">java.meetup.com</a> that may yield interesting things.<br>
+
+<!--#include virtual="/ibottom.shtml" -->

@@ -1,0 +1,48 @@
+<!--#include virtual="/itop.shtml" -->
+
+<table cellpadding=0 cellspacing=0 border=0>
+<tr><td valign=top><h2>IndyJUG Robocode Competition III - 2012</h2></td></tr>
+<tr><td><h3>Sponsored by</h3></td></tr>
+<tr><td>
+<tr><td><a href="http://www.partnersinstaffing.com/"><img border=0 src="/images/pinnacle.png"></a></td></tr>
+<tr><td><a href="http://www.moser-inc.com/"><img border=0 src="/images/moser.jpg"></a></td></tr>
+<tr><td><a href="http://www.e-gineering.com/"><img border=0 src="/images/eglogo.gif"></a></td></tr>
+</table>
+<br>
+
+<table style="border-color: red; border-style: solid; border-width: 2px;"><tr><td>
+<center><h2>Results!</h2></center>
+First Place: ($500)<br>
+Chuck Eastus: Karolos<br>
+<br>
+Second Place: ($325)<br>
+Don Taggart: TaggartBot<br>
+<br>
+Third Place: ($175)<br>
+Courtney &amp; Courtland Jones: DrunkenBoxer<br>
+<br>
+Thanks again to Pinnacle Partners, Moser Consulting, and E-gineering for sponsoring!<br>
+</td></tr></table>
+<br><br>
+Thanks to all who entered! <a href="/robocode3.br">Here is the battle file if you want to watch the whole bloody affair</a> (18 mb).<br>
+<br>
+Here are the gory details:<br>
+<br>
+
+<TABLE FRAME=VOID CELLSPACING=0 COLS=13 RULES=NONE BORDER=0>
+	<COLGROUP><COL WIDTH=60><COL WIDTH=114><COL WIDTH=232><COL WIDTH=114><COL WIDTH=60><COL WIDTH=82><COL WIDTH=78><COL WIDTH=88><COL WIDTH=92><COL WIDTH=82><COL WIDTH=46><COL WIDTH=49><COL WIDTH=46></COLGROUP>
+	<TBODY>
+<tr><td>Rank</td><td>Entrant</td><td>Robot Name</td><td>Total Score</td><td>Survival</td><td>Surv Bonus</td><td>Bullet Dmg</td><td>Bullet Bonus</td><td>Ram Dmg * 2</td><td>Ram Bonus</td><td> 1sts </td><td> 2nds </td><td> 3rds </td></tr>
+<tr><td>1st</td><TD>Chuck Eastus</TD><td>cre.Karolos 0.31</td><td>21772 (27%)</td><td>11250</td><td>1750</td><td>7052</td><td>825</td><td>511</td><td>385</td><td>25</td><td>4</td><td>3</td></tr>
+<tr><td>2nd</td><TD>Don Taggart</TD><td>com.eg.robocode.TaggartBot 1.0</td><td>12870 (16%)</td><td>6950</td><td>280</td><td>5151</td><td>408</td><td>77</td><td>5</td><td>4</td><td>6</td><td>8</td></tr>
+<tr><td>3rd</td><td>Courtney &amp; Courtland Jones</td><td>caj.robocode.DrunkenBoxer 1.0</td><td>11428 (14%)</td><td>7500</td><td>140</td><td>3502</td><td>190</td><td>82</td><td>15</td><td>2</td><td>8</td><td>9</td></tr>
+<tr><td>4th</td><TD>Biju Kunjummen</TD><td>bk.SeafarerRobot 1.2</td><td>9232 (11%)</td><td>5950</td><td>0</td><td>2884</td><td>114</td><td>284</td><td>0</td><td>0</td><td>7</td><td>4</td></tr>
+<tr><td>5th</td><TD>Dan Gradl</TD><td>gradl.robocode.robots.Dandroid 1.1</td><td>7896 (10%)</td><td>5750</td><td>140</td><td>1810</td><td>67</td><td>130</td><td>0</td><td>2</td><td>3</td><td>6</td></tr>
+<tr><td>6th</td><td>Michael Dowden</td><td>mrd.robo.Schizoid 1.0</td><td>6428 (8%)</td><td>5900</td><td>140</td><td>353</td><td>14</td><td>22</td><td>0</td><td>2</td><td>7</td><td>4</td></tr>
+<tr><td>7th</td><td>Michael Slattery</td><td>AggressiveBot</td><td>5779 (7%)</td><td>2700</td><td>0</td><td>2669</td><td>139</td><td>250</td><td>22</td><td>0</td><td>0</td><td>1</td></tr>
+<tr><td>8th</td><TD>Rick Ryker</TD><td>beautiful.Dreamer 0.5</td><td>5129 (6%)</td><td>2950</td><td>0</td><td>1788</td><td>56</td><td>296</td><td>38</td><td>0</td><td>0</td><td>0</td></tr>
+	</TBODY>
+</TABLE>
+
+
+<!--#include virtual="/ibottom.shtml" -->

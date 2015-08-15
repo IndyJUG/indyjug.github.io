@@ -1,0 +1,51 @@
+<!--#include virtual="/itop.shtml" -->
+
+<h2>IndyJUG Robocode Competition IV - 2013</h2>
+<table><tr><td>
+<table style="border-color: red; border-style: solid; border-width: 2px;"><tr><td>
+<center><h2>Results!</h2></center>
+First Place: ($500 - SmartIT)<br>
+Biju Kunjummen: Saaron<br>
+<br>
+Second Place: ($325 - Moser Consulting)<br>
+Jon Strayer: BotInBlack<br>
+<br>
+Third Place: ($175 - E-gineering)<br>
+Chuck Eastus: Karolos<br>
+<br>
+Best Minibot: ($150 - Pinnacle Partners)<br>
+Jon Strayer: BotInBlack<br>
+<br>
+Thanks again to SmartIT, Moser Consulting, E-gineering, and Pinnacle Partners!<br>
+</td></tr></table></td><td>
+<table cellpadding=2 cellspacing=0 border=0>
+<tr><td><a href="http://smart-itstaffing.com/"><img border=0 src="/images/smartit.png"></a></td><td><a href="http://www.moserit.com/"><img border=0 src="/images/moserit.png" height="74" width="250"></a></td></tr>
+<tr><td><a href="http://www.e-gineering.com/"><img border=0 src="/images/eglogo.gif"></a></td><td><a href="http://www.partnersinstaffing.com/"><img border=0 src="/images/pinnacle.png"></a></td></tr>
+</table></td></tr></table>
+
+
+<br><br>
+Thanks to all who entered! <a href="/robocode4.br">Here is the battle file if you want to re-live the magic!</a> (17 mb).<br>
+<br>
+Here are the gory details:<br>
+<br>
+
+<TABLE FRAME=VOID CELLSPACING=0 COLS=13 RULES=NONE BORDER=0>
+	<COLGROUP><COL WIDTH=60><COL WIDTH=114><COL WIDTH=232><COL WIDTH=114><COL WIDTH=60><COL WIDTH=82><COL WIDTH=78><COL WIDTH=88><COL WIDTH=92><COL WIDTH=82><COL WIDTH=46><COL WIDTH=49><COL WIDTH=46></COLGROUP>
+	<TBODY>
+<tr><td>Rank</td><td>Entrant</td><td>Robot Name</td><td>    Total Score    </td><td>Survival</td><td>Surv Bonus</td><td>Bullet Dmg</td><td>Bullet Bonus</td><td>Ram Dmg * 2</td><td>Ram Bonus</td><td> 1sts </td><td> 2nds </td><td> 3rds </td></tr>
+<tr><td>1st</td><td>Biju Kunjummen</td><td>saaron.Saaron 0.0.2</td><td>22183 (23%)</td><td>12400</td><td>2080</td><td>6844</td><td>754</td><td>76</td><td>29</td><td>26</td><td>1</td><td>3</td></tr>
+<tr><td>2nd</td><td>Jon Strayer</td><td>jes.BotInBlack 1.0</td><td>13903 (14%)</td><td>8600</td><td>80</td><td>4740</td><td>395</td><td>61</td><td>26</td><td>1</td><td>9</td><td>6</td></tr>
+<tr><td>3rd</td><td>Chuck Eastus</td><td>cre.Karolos 0.40</td><td>12866 (13%)</td><td>9000</td><td>240</td><td>3065</td><td>135</td><td>354</td><td>71</td><td>3</td><td>10</td><td>9</td></tr>
+<tr><td>4th</td><td>Don Taggart</td><td>com.eg.robocode.DWTaggart 2013</td><td>10660 (11%)</td><td>7150</td><td>320</td><td>2973</td><td>167</td><td>49</td><td>0</td><td>4</td><td>5</td><td>3</td></tr>
+<tr><td>5th</td><td>Courtney &amp; Courtland Jones</td><td>caj.robocode.DrunkenBoxer 1.0</td><td>10111 (10%)</td><td>7300</td><td>0</td><td>2628</td><td>91</td><td>77</td><td>15</td><td>0</td><td>4</td><td>4</td></tr>
+<tr><td>6th</td><td>Jason James</td><td>jmj.lividdust.LividDust 1.0</td><td>8050 (8%)</td><td>4250</td><td>0</td><td>2894</td><td>247</td><td>631</td><td>28</td><td>0</td><td>2</td><td>1</td></tr>
+<tr><td>7th</td><td>David Rickey</td><td>dmr.Sideswipe 99</td><td>8029 (8%)</td><td>6250</td><td>0</td><td>1668</td><td>46</td><td>49</td><td>16</td><td>0</td><td>2</td><td>7</td></tr>
+<tr><td>8th</td><td>Caitlyn Rickey</td><td>crr.EVE 2.0</td><td>6106 (6%)</td><td>5100</td><td>80</td><td>860</td><td>38</td><td>28</td><td>0</td><td>1</td><td>2</td><td>1</td></tr>
+<tr><td>9th</td><td>Michael Dowden</td><td>mrd.robocode.bots.Gollum 1.0</td><td>4812 (5%)</td><td>2950</td><td>0</td><td>1672</td><td>53</td><td>121</td><td>15</td><td>0</td><td>0</td><td>1</td></tr>
+
+	</TBODY>
+</TABLE>
+
+
+<!--#include virtual="/ibottom.shtml" -->

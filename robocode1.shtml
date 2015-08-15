@@ -1,0 +1,54 @@
+<!--#include virtual="/itop.shtml" -->
+
+<table cellpadding=0 cellspacing=0 border=0><tr><td valign=top><h2>IndyJUG Robocode Competition I - 2010</h2></td></tr>
+<tr><td><h3>Sponsored by</h3></td></tr>
+<tr><td><img width=200 src="/sponsors/fusion.jpg"></td></tr></table>
+<br>
+<table style="border-color: red; border-style: solid; border-width: 2px;"><tr><td>
+<center><h2>Results!</h2></center>
+First Place: ($300)<br>
+Jon Strayer's dark robot of death, BotInBlack took first place.<br>
+<br>
+Second Place: ($125)<br>
+Jason James' dervish of destruction, LividDust came in a close second.<br>
+<br>
+Third Place: ($75)<br>
+Rick Ryker's colorful and entertaining KnotMe came in third.<br>
+<br>
+Thanks again to Fusion Alliance for sponsoring!<br>
+<br>
+We will be doing this again in one form or another next year, so if you did not get a chance to enter, <b>start coding now for 2011</b>.
+</td></tr></table>
+
+
+<br>
+We are pleased to announce that the first annual IndyJUG Robocode Competition will be held at our <b>November 17th meeting</b>.<br>
+<br>
+Fusion Alliance is sponsoring the first occurrence of this competition which we hope will become a fun and anticipated event for the IndyJUG.<br>
+<br>
+Besides the obvious bragging rights and resume decorations that the winners will secure, there will also be $500 in cash prizes for the winners.<br>
+<br>
+The prize money will be as follows:<br>
+1st place: $300<br>
+2nd place: $125<br>
+3rd place: $75<br>
+<br>
+The rules for the competition are simple:<br>
+- Entrants must be a member of the IndyJUG yahoo group. (So <a href="/forum.shtml">sign up</a> already!)<br>
+- One bot per entrant.<br>
+- Write your own bot.<br>
+<br>
+Bots must be submitted by Midnight of 11/15/10 (email them to <a href="mailto:indyjug@gmail.com">indyjug@gmail.com</a>).<br>
+The competition will be conducted at the November IndyJUG meeting on a machine provided by the IndyJUG.<br>
+The winners will based on the total number of points they accumulate using the normal Robocode scoring system.<br>
+<br>
+More information (as well as the code) can be found at <a href="http://robocode.sourceforge.net">http://robocode.sourceforge.net</a>.<br>
+<br>
+Please feel free to post questions about this to the list.<br>
+<br>
+Write some code and win some cash for the holidays!<br>
+<br>
+Thanks again to Fusion Alliance for sponsoring this event!<br>
+
+
+<!--#include virtual="/ibottom.shtml" -->
