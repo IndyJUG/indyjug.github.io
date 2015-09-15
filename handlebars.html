@@ -43,7 +43,7 @@
 					return true;
 				}
 				//Local URLs
-				history.pushState({}, '', href);
+				history.pushState({}, '', location.href+"#"+href);
 				loadUrl(href);
 				return false;
 			});
