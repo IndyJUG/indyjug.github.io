@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Indianapolis Java User Group</title>
+
+</head>
+<body>
+
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.2/handlebars.min.js"></script>
+	<script src="js/markdown.js"></script>
+	<script id="entry-template" type="text/x-handlebars-template">
+	  <div class="entry">
+	    <h1>{{title}}</h1>
+	    <div id="main" class="body">
+	      {{{body}}}
+	    </div>
+	  </div>
+	</script>
+	<script>
+	$(function() {
+		if(!!(window.history && history.pushState)) {
+			$("a, area").click(function() {
+				history.pushState({}, '', $(this).attr("href"));
+				return false;
+			});
+		}
+		
+		
+		var source = $("#entry-template").html(),
+		    template = Handlebars.compile(source);
+		$.get("test.phtml", function ( data ) {
+			context = {title: "Indianapolis Java User Group", body: markdown.toHTML(data)},
+			$("body").append( template(context) );
+		}, "html");
+	});
+	</script>
+</body>
+</html>
+
