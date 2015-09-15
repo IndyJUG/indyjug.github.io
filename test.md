@@ -83,4 +83,7 @@ There's actually a lot more to Markdown than this. See the official [introductio
   [4]: http://daringfireball.net/projects/markdown/basics
   [5]: http://daringfireball.net/projects/markdown/syntax
 
+
+[Read the License](LICENSE)
+
 <p>And a <b>bold</b> Paragraph</p>

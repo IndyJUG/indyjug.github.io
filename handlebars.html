@@ -12,27 +12,50 @@
 	<script id="entry-template" type="text/x-handlebars-template">
 	  <div class="entry">
 	    <h1>{{title}}</h1>
-	    <div id="main" class="body">
-	      {{{body}}}
-	    </div>
+	    <div id="main" class="body"></div>
 	  </div>
 	</script>
 	<script>
 	$(function() {
+		var source = $("#entry-template").html(),
+		    template = Handlebars.compile(source),
+		    context = {title: "Indianapolis Java User Group"},
+		    loadUrl = function(url) {
+				var $main = $("#main");
+				$.get(url, function( data ) {
+					if(url.endsWith(".md")) {
+						$main.html( markdown.toHTML(data) );
+					} else {
+						$main.html( data );
+					}
+					window.scrollTo(0,0);
+				}, "html");
+			};
+		
+		//Ajaxify all links
 		if(!!(window.history && history.pushState)) {
-			$("a, area").click(function() {
-				history.pushState({}, '', $(this).attr("href"));
+			$(document).on("click", "a, area", function() {
+				var href = $(this).attr("href"),
+				    host = location.href.match(/\/\/[^\/]+/)[0];
+
+				//Remote URLs
+				if(href.startsWith("http") && !href.includes(host)) {
+					return true;
+				}
+				//Local URLs
+				history.pushState({}, '', href);
+				loadUrl(href);
 				return false;
 			});
+			$(window).on("popstate", function() {
+				loadUrl(location.href);
+			});
 		}
-		
-		
-		var source = $("#entry-template").html(),
-		    template = Handlebars.compile(source);
-		$.get("test.phtml", function ( data ) {
-			context = {title: "Indianapolis Java User Group", body: markdown.toHTML(data)},
-			$("body").append( template(context) );
-		}, "html");
+
+		//Load Template
+		$("body").append( template(context) );
+		//Load first page
+		loadUrl("test.md");
 	});
 	</script>
 </body>
