@@ -1,1 +1,99 @@
-<html><head><meta http-equiv="Refresh" content="0; url=/index.shtml" /></head></html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Indianapolis Java User Group</title>
+	
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet/less" href="styles.less">
+
+	<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.2/handlebars.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/markdown.js/0.5.0/markdown.min.js"></script>
+	<script id="entry-template" type="text/x-handlebars-template">
+	  <div class="entry">
+	    <h1>{{title}}</h1>
+	    {{html "itop.shtml"}}
+	    <div id="main" class="body"></div>
+	    {{html "ibottom.shtml"}}
+	  </div>
+	</script>
+	<script>
+	//TODO: Fix Right-Click on Links
+	//TODO: Consolidate Code
+		
+	Handlebars.registerHelper("html", function(url) {
+		var html;
+		console.log(url);
+		$.ajax(url, {async: false}, "html")
+		 .done(function( data ) {
+			 html = data;
+		 });
+		 console.log(Handlebars.SafeString(html));
+		 return new Handlebars.SafeString(html);
+	});
+	Handlebars.registerHelper("md", function(url) {
+		var html;
+		console.log(url);
+		$.ajax(url, {async: false}, "html")
+		 .done(function( data ) {
+			 html = markdown.toHTML(data);
+		 });
+		 return new Handlebars.SafeString(html);
+	});
+	
+	$(function() {
+		var source = $("#entry-template").html(),
+		    template = Handlebars.compile(source),
+		    context = {title: "Indianapolis Java User Group"},
+		    home = "index.md",
+		    page = (function() {
+				var parts = location.href.split("#");
+				if(location.href.includes("#")) {
+					return { href: parts[0], target: parts[1]};
+				}
+				return { href: location.href, target: home };
+			})(),
+		    loadUrl = function(url) {
+				var $main = $("#main");
+				$.get(url, function( data ) {
+					if(url.endsWith(".md")) {
+						$main.html( markdown.toHTML(data) );
+					} else {
+						$main.html( data );
+					}
+					window.scrollTo(0,0);
+				}, "html");
+			};
+
+		//Ajaxify all links
+		if(!!(window.history && history.pushState)) {
+			$(document).on("click", "a, area", function() {
+				var href = $(this).attr("href"),
+				    host = location.href.match(/\/\/[^\/]+/)[0];
+
+				//Remote URLs
+				if(href.startsWith("http") && !href.includes(host)) {
+					return true;
+				}
+				//Local URLs
+				history.pushState({}, '', page.href+"#"+href);
+				loadUrl(href);
+				return false;
+			});
+			$(window).on("popstate", function() {
+				loadUrl( page.target );
+			});
+		}
+
+		//Load Template
+		$("body").append( template(context) );
+		//Load first page
+		loadUrl( page.target );
+	});
+	</script>
+</head>
+<body>
+
+</body>
+</html>
