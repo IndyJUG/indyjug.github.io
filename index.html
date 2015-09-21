@@ -25,7 +25,6 @@
 	<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/markdown.js/0.5.0/markdown.min.js"></script>
 	<script>
-	//TODO: Fix Right-Click on Links
 	//TODO: Consolidate Code
 	//TODO: Consider Ember.js
 	$(function() {
@@ -33,95 +32,110 @@
 		    template = Handlebars.compile(source),
 		    context = {title: "Indianapolis Java User Group", logo: "img/jugmug100x50.png"},
 		    home = "index.md",
+		    protocolFromHref = function(href) {
+				var matches = href.match(/^([^:]+):/);
+				return matches ? matches[1] : '';
+			},
 		    hostFromHref = function(href) {
-				var matches = href.match(/\/\/[^\/]+/)
+				var matches = href.match(/\/\/[^\/]+/);
 				return matches ? matches[0] : '';
 			},
 			//Returns a full URL object
-			createUrl = function(url) {
-				var hasHash = url.includes("#"),
+			createUrl = function(url, defaultTarget) {
+				var defaultTarget = defaultTarget || "",
+					hasHash = url.includes("#"),
 					parts = url.split("#"),
 					href = hasHash ? parts[0] : url,
-					target = hasHash && parts[1] ? parts[1] : home;
+					target = hasHash && parts[1] ? parts[1] : defaultTarget;
 				return { host: hostFromHref(href), href: href, target: target, url: url };
 			},
-		    indexPage = createUrl(location.href),
+		    indexPage = createUrl(location.href, home),
 		    isExternal = function(href) {
-				return href.url === undefined
-					&& hostFromHref(href) !== ''
-					&& hostFromHref(href) !== indexPage.host;
+				var protocol = protocolFromHref(href),
+					host = hostFromHref(href);
+				return (host !== '' && host !== indexPage.host)
+					|| (!!protocol && protocol !== 'http' && protocol !== 'https');
 			},
 			reTestIndex = new RegExp(indexPage.host + '\/?$'),
 			isIndex = function(href) {
-				return href === indexPage || href === '/' || !!href.match(reTestIndex);
+				return href === '/' || !!href.match(reTestIndex);
 			},
 			//Returns a full URL object
 		    cleanUrl = function(href) {
 				if(isExternal(href)) {
-					return href;
+					return createUrl(href);
 				} else if(isIndex(href)) {
-					return indexPage;
+					return { host: indexPage.host, href: indexPage.href, target: home, url: indexPage.href };
 				} else {
-					var url = createUrl(href),
-						fullUrl = url.href === indexPage.href ? indexPage.href : indexPage.href+'#'+url.href;
-					return { host: indexPage.host, href: indexPage.href, target: url.href, url: fullUrl };
+					var re = new RegExp(indexPage.host + '\/(.*)'),
+						url = createUrl(href),
+						hrefMatch = url.href.match(re),
+						cleanHref = !!hrefMatch ? hrefMatch[1] : url.href,
+						target = !!url.target ? url.target : cleanHref,
+						fullUrl = indexPage.href+'#'+target;
+
+					return { host: indexPage.host, href: indexPage.href, target: target, url: fullUrl };
 				}
+			},
+			fixLinks = function($html) {
+				$html.find("a").each(function(index, elem) {
+					elem.href = cleanUrl(elem.href).url;
+				});
 			},
 		    loadUrl = function(url) {
 				var $main = $("#main");
-				$.get(url, function( data ) {
-					if(url.endsWith(".md")) {
+				$.get(url.target, function( data ) {
+					if(url.target.endsWith(".md")) {
 						$main.html( markdown.toHTML(data) );
 					} else {
 						$main.html( data );
 					}
+					fixLinks($main);
 					window.scrollTo(0,0);
 				}, "html");
 			};
 		
 		//Register Handlebars Helpers
+		/*
 		Handlebars.registerHelper("html", function(url) {
 			var html;
-			console.log(url);
 			$.ajax(url, {async: false}, "html")
 			 .done(function( data ) {
 				 html = data;
 			 });
-			 console.log(Handlebars.SafeString(html));
 			 return new Handlebars.SafeString(html);
 		});
 		Handlebars.registerHelper("md", function(url) {
 			var html;
-			console.log(url);
 			$.ajax(url, {async: false}, "html")
 			 .done(function( data ) {
 				 html = markdown.toHTML(data);
 			 });
 			 return new Handlebars.SafeString(html);
-		});
+		}); */
 
 		//Ajaxify all links
 		if(!!(window.history && history.pushState)) {
 			$(document).on("click", "a, area", function() {
 				var url = cleanUrl($(this).attr("href"));
 				//Navigate directly to external urls
-				if(isExternal(url)) {
+				if(isExternal(url.url)) {
 					return true;
 				}
 				//Save state and load content with AJAX
 				history.pushState({}, '', url.url);
-				loadUrl(url.target);
+				loadUrl( url );
 				return false;
 			});
 			$(window).on("popstate", function() {
-				loadUrl( createUrl(location.href).target );
+				loadUrl( createUrl(location.href) );
 			});
 		}
 
 		//Load Template
-		$("body").prepend( template(context) );
+		fixLinks( $("body").prepend( template(context) ) );
 		//Load first page
-		loadUrl( home );
+		loadUrl( indexPage );
 	});
 	</script>
 	<script id="entry-template" type="text/x-handlebars-template">
