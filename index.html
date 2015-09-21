@@ -1,59 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<title>Indianapolis Java User Group</title>
 	
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootswatch/3.3.5/sandstone/bootstrap.min.css" integrity="sha256-Ay17X/itZzhUFkDfLB9MICE7tbVwtPuFhcwDpABdbEA= sha512-eTtl6Aa3v8DrTCYWH7cAfXt6QW8DpsFn0hdCcYIWe6VDMyPMikXBWd/9bZR5YZNrmHBBu4KGdVgfPs1aEEgVIw==" crossorigin="anonymous">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<link rel="stylesheet/less" href="styles.less">
 
+	<!--[if lt IE 9]>
+	  <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	  <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+
 	<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.2/handlebars.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/markdown.js/0.5.0/markdown.min.js"></script>
-	<script id="entry-template" type="text/x-handlebars-template">
-	  <div class="entry">
-	    <h1>{{title}}</h1>
-	    {{html "itop.shtml"}}
-	    <div id="main" class="body"></div>
-	    {{html "ibottom.shtml"}}
-	  </div>
-	</script>
 	<script>
 	//TODO: Fix Right-Click on Links
 	//TODO: Consolidate Code
-		
-	Handlebars.registerHelper("html", function(url) {
-		var html;
-		console.log(url);
-		$.ajax(url, {async: false}, "html")
-		 .done(function( data ) {
-			 html = data;
-		 });
-		 console.log(Handlebars.SafeString(html));
-		 return new Handlebars.SafeString(html);
-	});
-	Handlebars.registerHelper("md", function(url) {
-		var html;
-		console.log(url);
-		$.ajax(url, {async: false}, "html")
-		 .done(function( data ) {
-			 html = markdown.toHTML(data);
-		 });
-		 return new Handlebars.SafeString(html);
-	});
-	
+	//TODO: Consider Ember.js
 	$(function() {
 		var source = $("#entry-template").html(),
 		    template = Handlebars.compile(source),
-		    context = {title: "Indianapolis Java User Group"},
+		    context = {title: "Indianapolis Java User Group", logo: "img/jugmug100x50.png"},
 		    home = "index.md",
-		    page = (function() {
-				var parts = location.href.split("#");
-				if(location.href.includes("#")) {
-					return { href: parts[0], target: parts[1]};
+		    hostFromHref = function(href) {
+				var matches = href.match(/\/\/[^\/]+/)
+				return matches ? matches[0] : '';
+			},
+			//Returns a full URL object
+			createUrl = function(url) {
+				var hasHash = url.includes("#"),
+					parts = url.split("#"),
+					href = hasHash ? parts[0] : url,
+					target = hasHash && parts[1] ? parts[1] : home;
+				return { host: hostFromHref(href), href: href, target: target, url: url };
+			},
+		    indexPage = createUrl(location.href),
+		    isExternal = function(href) {
+				return href.url === undefined
+					&& hostFromHref(href) !== ''
+					&& hostFromHref(href) !== indexPage.host;
+			},
+			reTestIndex = new RegExp(indexPage.host + '\/?$'),
+			isIndex = function(href) {
+				return href === indexPage || href === '/' || !!href.match(reTestIndex);
+			},
+			//Returns a full URL object
+		    cleanUrl = function(href) {
+				if(isExternal(href)) {
+					return href;
+				} else if(isIndex(href)) {
+					return indexPage;
+				} else {
+					var url = createUrl(href),
+						fullUrl = url.href === indexPage.href ? indexPage.href : indexPage.href+'#'+url.href;
+					return { host: indexPage.host, href: indexPage.href, target: url.href, url: fullUrl };
 				}
-				return { href: location.href, target: home };
-			})(),
+			},
 		    loadUrl = function(url) {
 				var $main = $("#main");
 				$.get(url, function( data ) {
@@ -65,35 +78,103 @@
 					window.scrollTo(0,0);
 				}, "html");
 			};
+		
+		//Register Handlebars Helpers
+		Handlebars.registerHelper("html", function(url) {
+			var html;
+			console.log(url);
+			$.ajax(url, {async: false}, "html")
+			 .done(function( data ) {
+				 html = data;
+			 });
+			 console.log(Handlebars.SafeString(html));
+			 return new Handlebars.SafeString(html);
+		});
+		Handlebars.registerHelper("md", function(url) {
+			var html;
+			console.log(url);
+			$.ajax(url, {async: false}, "html")
+			 .done(function( data ) {
+				 html = markdown.toHTML(data);
+			 });
+			 return new Handlebars.SafeString(html);
+		});
 
 		//Ajaxify all links
 		if(!!(window.history && history.pushState)) {
 			$(document).on("click", "a, area", function() {
-				var href = $(this).attr("href"),
-				    host = location.href.match(/\/\/[^\/]+/)[0];
-
-				//Remote URLs
-				if(href.startsWith("http") && !href.includes(host)) {
+				var url = cleanUrl($(this).attr("href"));
+				//Navigate directly to external urls
+				if(isExternal(url)) {
 					return true;
 				}
-				//Local URLs
-				history.pushState({}, '', page.href+"#"+href);
-				loadUrl(href);
+				//Save state and load content with AJAX
+				history.pushState({}, '', url.url);
+				loadUrl(url.target);
 				return false;
 			});
 			$(window).on("popstate", function() {
-				loadUrl( page.target );
+				loadUrl( createUrl(location.href).target );
 			});
 		}
 
 		//Load Template
-		$("body").append( template(context) );
+		$("body").prepend( template(context) );
 		//Load first page
-		loadUrl( page.target );
+		loadUrl( home );
 	});
 	</script>
-</head>
-<body>
+	<script id="entry-template" type="text/x-handlebars-template">
+		<div class="container"> &nbsp;
+			{{!-- Branding --}}
+			<h1><img src="{{logo}}" alt="{{title}}"> {{title}}</h1>
+
+			{{!-- Nav Bar --}}
+			<nav class="navbar navbar-default">
+			  <div class="container-fluid">
+				<div class="navbar-header">
+				  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+				</div>
+				<div id="navbar" class="collapse navbar-collapse">
+				  <ul class="nav navbar-nav">
+					<li><a href="/">Home</a></li>
+					<li><a href="forum.shtml">Forums</a></li>
+					<li><a href="meetings.shtml">Meetings</a></li>
+					<li><a href="sponsors.shtml">Sponsors</a></li>
+					<li><a href="resources.shtml">Resources</a></li>
+					<li><a href="robocode.md">Robocode</a></li>
+				  </ul>
+				  <ul class="nav navbar-nav navbar-right">
+					<li><a href="about.md">About</a></li>
+					<li><a href="contact.md">Contact</a></li>
+				  </ul>
+				</div><!--/.nav-collapse -->
+			  </div>
+			</nav>
+
+			{{!-- Main Content (Loaded Separately) --}}
+			<div id="main"></div>
+			
+			{{!-- Footer --}}
+			<div class="panel panel-default">
+				<div class="panel-body row">
+					<div class="col-md-4">
+						<a href="https://twitter.com/indy_java"><i class="fa fa-2x fa-twitter-square"></i></a>
+						<a href="https://www.linkedin.com/grp/home?gid=3662644"><i class="fa fa-2x fa-linkedin-square"></i></a>
+					</div>
+					<div class="col-md-4"></div>
+					<div class="col-md-4 text-right">
+						<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">This website</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+					</div>
+				</div>
+			</div>
+		</div><!-- /.container -->
+	</script>
 
 </body>
 </html>
