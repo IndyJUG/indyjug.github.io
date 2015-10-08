@@ -16,9 +16,10 @@ Please feel free to post job openings and inquiries to the [list](/forum.shtml).
 ## Want to Sponsor us?
 
 You can sponsor the IndyJUG in any or all of the following ways:
- * Funds for refreshments, projects, web hosting, etc.
- * Meeting location - allow us to use your facility for one or more of our meetings.
- * Provide Java-related resources to members.
+
+* Funds for refreshments, projects, web hosting, etc.
+* Meeting location - allow us to use your facility for one or more of our meetings.
+* Provide Java-related resources to members.
 
 We appreciate your sponsorship, and will recognize your assistance through announcements to members, and by putting your company logo on the sponsors page on our website.
 If you are interested in sponsoring us, please send an email to [IndyJUG@gmail.com](mailto:IndyJug@gmail.com?subject=Sponsor Inquiry) or contact Michael Dowden directly.
