@@ -2,18 +2,32 @@ angular.module('app', ['ngRoute'])
 
 .config(function($routeProvider) {
 	$routeProvider
-		.when('/', {
+		.when('/:page.md', {
 			templateUrl: 'template.html',
-			controller: 'PageController'
+			controller: 'MarkdownController'
+		})
+		.when('/:page.html', {
+			templateUrl: function(param) {
+				return param.page + '.html';
+			}
+		})
+		.when('/:page.shtml', {
+			templateUrl: function(param) {
+				return param.page + '.shtml';
+			}
 		})
 		.otherwise({
-			redirectTo: '/'
+			redirectTo: '/index.md'
 		});
 })
 
-.controller('PageController', function($scope, $http, $sce) {
-	console.log("PageController");
-	$http.get('index.md').success(function(data) {
-		$scope.html = $sce.trustAsHtml(markdown.toHTML(data));
+.controller('MarkdownController', function($scope, $http, $sce, $routeParams, $compile) {
+	console.log("MarkdownController: " + $routeParams.page);
+	$http.get($routeParams.page + '.md').then(function(response) {
+		var html = markdown.toHTML(response.data).replace(/a href="\//g, 'a href="#/');
+		console.log(html);
+		$scope.html = $sce.trustAsHtml( html );
+	}, function(response) { 
+		$scope.html = $sce.trustAsHtml('<h1>(' + response.status + ') ' + response.statusText + '</h1><p>&nbsp;</p>');
 	});
 });
