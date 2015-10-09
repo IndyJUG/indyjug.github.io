@@ -30,7 +30,7 @@ angular.module('app', ['ngRoute'])
 	$http.get($routeParams.page + '.md').then(function(response) {
 		var html = markdown.toHTML(response.data);
 		console.log(html);
-		html = html.replace(/(a href=")(?![a-z]+\:)(?!\/\/)(?!(\d{0,3}\.){3})(?!(\w{4}\:){7})/g, 'a href="#');
+		html = html.replace(/(a href=")(?![a-z]+\:)(?!\/\/)(?!(\d{0,3}\.){3})(?!(\w{4}\:){7})/gi, 'a href="#');
 		console.log(html);
 		$scope.html = $sce.trustAsHtml( html );
 	}, function(response) { 
