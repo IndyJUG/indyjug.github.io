@@ -2,7 +2,15 @@ function isExternal(url) {
 	return url.startsWith('//') || !!url.match(/^[a-z]+:(?!\d)/i);
 };
 
-angular.module('app', ['ngRoute', 'angulartics', 'angulartics.google.analytics.cordova'])
+angular.module('app', ['ngRoute'])
+
+.run(function($rootScope, $location) {
+	$rootScope.$on('$routeChangeSuccess', function() {
+		var current = $location.path().substring(1).split('.')[0];
+		$rootScope.pageclass = current;
+		ga('send', 'pageview', { page: $location.url() });
+	});
+})
 
 .config(function($routeProvider) {
 	$routeProvider
@@ -20,8 +28,13 @@ angular.module('app', ['ngRoute', 'angulartics', 'angulartics.google.analytics.c
 				return param.page + '.shtml';
 			}
 		})
+		//Default to .md extension
+		.when('/:page', {
+			templateUrl: 'template.html',
+			controller: 'MarkdownController'
+		})
 		.otherwise({
-			redirectTo: '/index.md'
+			redirectTo: '/index'
 		});
 })
 
@@ -33,4 +46,12 @@ angular.module('app', ['ngRoute', 'angulartics', 'angulartics.google.analytics.c
 	}, function(response) { 
 		$scope.html = $sce.trustAsHtml('<h1>(' + response.status + ') ' + response.statusText + '</h1><p>&nbsp;</p>');
 	});
+})
+
+/* Implements Active Menu selection */
+.controller('NavController', function($scope, $location) {
+	$scope.menuClass = function(page) {
+		var current = $location.path().substring(1).split('.')[0];
+		return page === current ? "active" : "";
+	};
 });

@@ -1,3 +1,9 @@
 h1 img {
   vertical-align: bottom;
 }
+.widget.twitter {
+  display: none;
+}
+.index .widget.twitter {
+  display: block;
+}

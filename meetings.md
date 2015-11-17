@@ -16,5 +16,11 @@ We also have a quarterly meeting at 11:30am on the 2nd Thursday every third mont
 [135 North Pennsylvania Street, Indianapolis, IN](https://www.google.com/maps/place/135+N+Pennsylvania+St,+Indianapolis,+IN+46204/@39.7695058,-86.1578627,17z/data=!3m1!4b1!4m2!3m1!1s0x886b50be11ba4e5f:0xd35e366c17c1cff3)  
 Indianapolis, IN 46204
 
+### Archive
+
+All of our meetings since May 2013 are available on Meetup.com. For 
+earlier meetings you can visit our [archive](/meetingtable.html).
+
+
 [meetup_logo]: http://img.meetup.com/img/logo_45.png
 [meetup_href]: http://www.meetup.com/r/inbound/0/0/shareimg/http://www.meetup.com/Indianapolis-Java-User-Group/?a=shareimg

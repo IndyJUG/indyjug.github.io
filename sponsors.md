@@ -42,3 +42,17 @@ Pinnacle Partners is dedicated to providing superior staffing services in centra
 
 [pinnacle]: http://www.partnersinstaffing.com/
 [pinnacle_logo]: /sponsors/pinnacle.png
+
+## Want to Sponsor us?
+
+You can sponsor the IndyJUG in any or all of the following ways:
+
+* Speakers - arrange for a speaker to come to one of our events
+* Meeting location - allow us to use your facility for one or more of our meetings
+* Food & beverage - provide meals for our gatherings
+* Hosting - pay for our domain name and meetup.com account
+* Prizes - provide prize money for our annual programming competition
+* Promotion - help us promote the group and our individual meetings
+
+We appreciate your sponsorship, and will recognize your assistance through announcements to members, and by putting your company logo on the sponsors page on our website and Meetup.com profile.
+If you are interested in sponsoring us, please send an email to [IndyJUG@gmail.com](mailto:IndyJug+Web@gmail.com?subject=Sponsor Inquiry) or contact [Michael Dowden](https://www.linkedin.com/in/mdowden) directly.

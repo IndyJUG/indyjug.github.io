@@ -19,7 +19,7 @@ We strongly encourage everyone interested in our group to join us on
 is where you will find our [discussion forum](http://www.meetup.com/Indianapolis-Java-User-Group/messages/boards/) 
 and the latest  information about our events.
 
-You may also join our [LinkedIn Group](https://www.linkedin.com/grps/Indianapolis-Java-User-Group-3662644/about) for updates and discussion.
+You may also join our [LinkedIn Group](https://www.linkedin.com/groups/3662644) for updates and discussion.
 
 ### IndyJUG Meetings
 We have monthly meetings at 6:00pm on the 3rd Wednesday of every month. This meeting is held at:

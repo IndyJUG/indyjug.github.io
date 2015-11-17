@@ -16,62 +16,71 @@
 	  <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
 </head>
-<body>
+<body class="{{pageclass}}">
 	<div class="container"> &nbsp;
 		<!-- Branding -->
 		<h1><img src="img/jugmug100x50.png" alt="Indianapolis Java User Group"> Indianapolis Java User Group</h1>
 
 		<!-- Nav Bar -->
-		<nav class="navbar navbar-default">
-		  <div class="container-fluid">
+		<nav class="navbar navbar-default" ng-controller="NavController">
 			<div class="navbar-header">
-			  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 				<span class="sr-only">Toggle navigation</span>
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
-			  </button>
+				</button>
 			</div>
 			<div id="navbar" class="collapse navbar-collapse">
-			  <ul class="nav navbar-nav">
-				<li><a href="#/">Home</a></li>
-				<li><a href="#/meetings.md">Meetings</a></li>
-				<li><a href="#/sponsors.md">Sponsors</a></li>
-				<li><a href="#/resources.shtml">Resources</a></li>
-				<li><a href="#/robocode.md">Robocode</a></li>
-			  </ul>
-			  <ul class="nav navbar-nav navbar-right">
-				<li><a href="#/about.md">About</a></li>
-				<li><a href="#/contact.md">Contact</a></li>
-			  </ul>
+				<ul class="nav navbar-nav">
+					<li ng-class="menuClass('index')"><a href="#/">Home</a></li>
+					<li ng-class="menuClass('meetings')"><a href="#/meetings">Meetings</a></li>
+					<li ng-class="menuClass('sponsors')"><a href="#/sponsors">Sponsors</a></li>
+					<li ng-class="menuClass('robocode')"><a href="#/robocode">Robocode</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li ng-class="menuClass('about')"><a href="#/about">About</a></li>
+					<li ng-class="menuClass('contact')"><a href="#/contact">Contact</a></li>
+				</ul>
 			</div><!--/.nav-collapse -->
-		  </div>
 		</nav>
 
-		<!-- Main Content (Loaded Separately) -->
-		<div ng-view></div>
+		<div class="panel panel-none">
+			<div class="panel-body table-layout">
+				<div ng-view class="col-lg-9 col-md-8 col-sm-7"><!-- Main Content (Loaded Separately) --></div>
+				<aside class="col-lg-3 col-md-4 col-sm-5 hidden-xs">
+					<div class="widget meetup">
+						<iframe width="273" height="500" src="//meetu.ps/2QLGnf" frameborder="0"></iframe>
+					</div>
+					<div class="widget twitter">
+						<a class="twitter-timeline" href="//twitter.com/Indy_Java" data-widget-id="666290749407907841">Tweets by @Indy_Java</a>
+						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+					</div>
+				</aside>
+			</div>
+		</div>
 		
 		<!-- Footer -->
 		<div class="panel panel-default">
-			<div class="panel-body row">
-				<div class="col-md-4">
-					<a href="https://twitter.com/indy_java"><img src="img/twitter.png" alt="Twitter"></a>
-					<a href="https://www.linkedin.com/grp/home?gid=3662644"><img src="img/linkedin.png" alt="LinkedIn"></a>
-					<a href="http://www.meetup.com/r/inbound/0/0/shareimg/http://www.meetup.com/Indianapolis-Java-User-Group/?a=shareimg"><img border="0" alt="Indianapolis Java User Group" src="http://img.meetup.com/img/logo_45.png"></a>
+			<div class="panel-body">
+				<div class="row">
+					<div class="col-sm-4 col-xs-6">
+						<a href="https://twitter.com/indy_java"><img src="img/twitter.png" alt="Twitter"></a>
+						<a href="https://www.linkedin.com/groups/3662644"><img src="img/linkedin.png" alt="LinkedIn"></a>
+						<a href="http://www.meetup.com/r/inbound/0/0/shareimg/http://www.meetup.com/Indianapolis-Java-User-Group/?a=shareimg"><img border="0" alt="Indianapolis Java User Group" src="http://img.meetup.com/img/logo_45.png"></a>
+					</div>
+					<div class="col-sm-4 col-sm-offset-4 col-xs-6 text-right">
+						<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
+					</div>
 				</div>
-				<div class="col-md-4"></div>
-				<div class="col-md-4 text-right">
-					<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">This website</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
-				</div>
+				<div class="row text-center"><br><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">This website</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</div>
 			</div>
 		</div>
-	</div><!-- /.container -->
 
+	</div><!-- /.container -->
 
 	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
 	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.min.js"></script>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/angulartics/0.20.1/angulartics.min.js"></script>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/angulartics/0.20.1/angulartics-ga-cordova.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/markdown.js/0.5.0/markdown.min.js"></script>
 	<script src="angular.js"></script>
 	<script>
@@ -81,6 +90,7 @@
 		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
 		ga('create', 'UA-70112964-1', 'auto');
+		ga('send', 'pageview');
 	</script>
 </body>
 </html>
