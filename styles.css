@@ -13,3 +13,11 @@ h1 img {
 .index .widget.twitter {
   display: block;
 }
+.robocode1 aside,
+.robocode2 aside,
+.robocode3 aside,
+.robocode4 aside,
+.robocode5 aside,
+.robocode6 aside {
+  display: none;
+}
