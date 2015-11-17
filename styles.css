@@ -1,3 +1,9 @@
+body a {
+  color: #187dbe;
+}
+body a:hover {
+  color: #53aee9;
+}
 h1 img {
   vertical-align: bottom;
 }

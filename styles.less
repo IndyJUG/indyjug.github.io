@@ -1,6 +1,16 @@
 @jug-blue: #187dbe;
 
-h1 img	{ vertical-align: bottom; }
+body a {
+	color: @jug-blue;
+	
+	&:hover {
+		color: lighten(@jug-blue, 20%);
+	}
+}
+
+h1 img {
+	vertical-align: bottom;
+}
 
 // Only show Twitter feed on Home Page
 .widget.twitter { display: none; }
