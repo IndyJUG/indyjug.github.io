@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /sponsors/
+Disallow: /img/
+Disallow: /presentations/
+Disallow: /meetings/
+Disallow: /#/robocode3.br
+Disallow: /#/robocode4.br
+Disallow: /#/angular.js
+Disallow: /#/meetingtable.html

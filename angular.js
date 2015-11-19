@@ -34,7 +34,7 @@ angular.module('app', ['ngRoute'])
 			controller: 'MarkdownController'
 		})
 		.otherwise({
-			redirectTo: '/index'
+			redirectTo: '/home'
 		});
 })
 
