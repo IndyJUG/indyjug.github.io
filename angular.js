@@ -27,6 +27,12 @@ angular.module('app', ['ngRoute'])
 				return param.page + '.' + param.ext;
 			}
 		})
+		//Handle Subfolders
+		.when('/:path*/:page.:ext', {
+			templateUrl: function(param) {
+				return param.path + '/' + param.page + '.' + param.ext;
+			}
+		})
 		//Assume Markdown files
 		.when('/:page', {
 			templateUrl: 'template.html',
