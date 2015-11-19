@@ -14,28 +14,26 @@ angular.module('app', ['ngRoute'])
 
 .config(function($routeProvider) {
 	$routeProvider
+		//Redirect old index page to new home page
+		.when('/index', { redirectTo: '/home' })
+		//Handle Markdown files
 		.when('/:page.md', {
 			templateUrl: 'template.html',
 			controller: 'MarkdownController'
 		})
-		.when('/:page.html', {
+		//Handle other file types
+		.when('/:page.:ext', {
 			templateUrl: function(param) {
-				return param.page + '.html';
+				return param.page + '.' + param.ext;
 			}
 		})
-		.when('/:page.shtml', {
-			templateUrl: function(param) {
-				return param.page + '.shtml';
-			}
-		})
-		//Default to .md extension
+		//Assume Markdown files
 		.when('/:page', {
 			templateUrl: 'template.html',
 			controller: 'MarkdownController'
 		})
-		.otherwise({
-			redirectTo: '/home'
-		});
+		//Redirect from root (/)
+		.otherwise({ redirectTo: '/home' });
 })
 
 .controller('MarkdownController', function($scope, $http, $sce, $routeParams, $compile) {
