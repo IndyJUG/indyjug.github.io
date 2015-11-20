@@ -54,7 +54,6 @@ angular.module('app', ['ngRoute', 'ui.bootstrap'])
 
 /* Implements Active Menu selection */
 .controller('NavController', function($scope, $location) {
-	$scope.navbarCollapsed = true;
 	$scope.menuClass = function(page) {
 		var current = $location.path().substring(1).split('.')[0];
 		return page === current ? "active" : "";

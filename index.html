@@ -27,14 +27,14 @@
 		<!-- Nav Bar -->
 		<nav class="navbar navbar-default" ng-controller="NavController">
 			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" ng-click="navbarCollapsed = !navbarCollapsed">
+				<button type="button" class="navbar-toggle" ng-init="navbarCollapsed = true" ng-click="navbarCollapsed = !navbarCollapsed">
 					<span class="sr-only">Toggle navigation</span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
 			</div>
-			<div class="collapse navbar-collapse" collapse="navbarCollapsed">
+			<div class="collapse navbar-collapse" ng-class="{'in':!navbarCollapsed}">
 				<ul class="nav navbar-nav">
 					<li ng-class="menuClass('home')"><a href="#/">Home</a></li>
 					<li ng-class="menuClass('meetings')"><a href="#/meetings">Meetings</a></li>
