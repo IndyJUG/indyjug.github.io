@@ -2,7 +2,7 @@ function isExternal(url) {
 	return url.startsWith('//') || !!url.match(/^[a-z]+:(?!\d)/i);
 };
 
-angular.module('app', ['ngRoute'])
+angular.module('app', ['ngRoute', 'ui.bootstrap'])
 
 .run(function($rootScope, $location) {
 	$rootScope.$on('$routeChangeSuccess', function() {
@@ -54,6 +54,7 @@ angular.module('app', ['ngRoute'])
 
 /* Implements Active Menu selection */
 .controller('NavController', function($scope, $location) {
+	$scope.navbarCollapsed = true;
 	$scope.menuClass = function(page) {
 		var current = $location.path().substring(1).split('.')[0];
 		return page === current ? "active" : "";
