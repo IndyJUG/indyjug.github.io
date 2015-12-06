@@ -19,8 +19,14 @@ Eleven Fifty Academy teaches iOS, Android, Mobile and Web development to individ
 * * * * * * * * * * * * * * * * * * * *
 
 [![Robert Half Technology][rht_logo]][rht]  
-Robert Half hosts and provides food for our quarterly downtown meetings and has sponsored our last two Robocode competitions.
+Robert Half hosts and provides food for our quarterly downtown meetings and has sponsored our last two Robocode competitions.  
 Robert Half Technology, a leader among IT employment agencies in the Indianapolis area, offers a full spectrum of technology staffing services – from project, contract-to-hire and full-time technology staffing services to IT managed services and IT solutions consulting.
+
+* * * * * * * * * * * * * * * * * * * *
+
+[![C|Spring][cspring_logo]][cspring]  
+C|Spring provides the Meetup.com account for the group.  
+CSpring offers IT Solutions that deliver success. Business and IT consulting focused on technology, data, and business alignment. Based in Indianapolis.
 
 * * * * * * * * * * * * * * * * * * * *
 
@@ -42,6 +48,9 @@ Pinnacle Partners is dedicated to providing superior staffing services in centra
 
 [pinnacle]: http://www.partnersinstaffing.com/
 [pinnacle_logo]: /sponsors/pinnacle.png
+
+[cspring]: http://www.cspring.com/
+[cspring_logo]: /sponsors/cspring.jpg
 
 ## Want to Sponsor us?
 
