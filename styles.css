@@ -10,7 +10,7 @@ h1 img {
 .widget.twitter {
   display: none;
 }
-.index .widget.twitter {
+.home .widget.twitter {
   display: block;
 }
 .robocode1 aside,
