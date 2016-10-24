@@ -3,6 +3,7 @@
 IndyJUG hosts an annual Robocode programming competition every fall. 
 Below are links to past events.
 
+* [2016 - Robocode VII](robocode7)
 * [2015 - Robocode VI](robocode6)
 * [2014 - Robocode V](robocode5)
 * [2013 - Robocode IV](robocode4)

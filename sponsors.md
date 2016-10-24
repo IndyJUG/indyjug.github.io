@@ -1,13 +1,13 @@
 ## Our Sponsors
 
 [![Moser Consulting][moser_logo]][moser]  
-Moser Consulting provides pizza for our monthly meetings and has sponsored four Robocode competitions.  
+Moser Consulting provides pizza for our monthly meetings and has sponsored five Robocode competitions.  
 Moser is a technology solutions company specializing in big data, data management, infrastructure, business intelligence, servers, storage, and information security solutions.
 
 * * * * * * * * * * * * * * * * * * * *
 
 [![E-gineering][egineering_logo]][egineering]  
-E-gineering hosts our monthly meetings and has sponsored our last five Robocode competitions.  
+E-gineering hosts our monthly meetings and has sponsored our last six Robocode competitions.  
 E-gineering is an IT consulting firm.  Based in Indianapolis, Indiana, we have helped clients implement successful information technology solutions across the Midwest and beyond.  We can assist with all facets of a custom software solution for your business.
 
 * * * * * * * * * * * * * * * * * * * *
@@ -19,7 +19,7 @@ Eleven Fifty Academy teaches iOS, Android, Mobile and Web development to individ
 * * * * * * * * * * * * * * * * * * * *
 
 [![Robert Half Technology][rht_logo]][rht]  
-Robert Half hosts and provides food for our quarterly downtown meetings and has sponsored our last two Robocode competitions.  
+Robert Half hosts and provides food for our quarterly downtown meetings and has sponsored our last three Robocode competitions.  
 Robert Half Technology, a leader among IT employment agencies in the Indianapolis area, offers a full spectrum of technology staffing services – from project, contract-to-hire and full-time technology staffing services to IT managed services and IT solutions consulting.
 
 * * * * * * * * * * * * * * * * * * * *
@@ -31,7 +31,7 @@ CSpring offers IT Solutions that deliver success. Business and IT consulting foc
 * * * * * * * * * * * * * * * * * * * *
 
 [![Pinnacle Partners][pinnacle_logo]][pinnacle]  
-Pinnacle Partners has sponsored our last four Robocode competitions and regularly attends our meetups.  
+Pinnacle Partners has sponsored our last five Robocode competitions and regularly attends our meetups.  
 Pinnacle Partners is dedicated to providing superior staffing services in central Indiana, with 30 professionals in our Indianapolis-based office servicing over 300 clients in central Indiana.
 
 [moser]: http://www.moserit.com/

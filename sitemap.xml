@@ -57,6 +57,10 @@
       <changefreq>never</changefreq>
    </url>
    <url>
+      <loc>http://indyjug.net/#/robocode7</loc>
+      <changefreq>never</changefreq>
+   </url>
+   <url>
       <loc>http://indyjug.net/#/about</loc>
       <changefreq>yearly</changefreq>
    </url>
